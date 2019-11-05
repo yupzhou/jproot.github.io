@@ -1,0 +1,18 @@
+{
+    "mouseover": [
+        {
+            "selector": "#dicsearch",
+            "text": ["我帮你找哦~"]
+        },
+        {
+            "selector": ".listsearchbox",
+            "text": ["在找什么东西呢，需要帮忙吗？"]
+        }
+    ],
+  "click": [
+       {
+            "selector": "#landlord #live2d",
+            "text": ["嗯♀~", "不要动手动脚的！快把手拿开~~チラッ", "真…真的是不知羞耻！但是我喜欢","Hentai! Hentai!", "再摸的话……我可要报警了！⌇●﹏●⌇", "110吗，这里有个变态一直在摸我(ó﹏ò｡)", "乖♀乖♀站♀好", "Ass♀We♀Can", "警察先生! 就是这个人", "Do you like van♀游戏？" ]
+        } 
+    ]
+}

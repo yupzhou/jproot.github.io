@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flat-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>日语音训查询</title>
+</head>
+
+<body>
+  <div class="bg1">
+    <div class="box">
+      <h2 class="index-title"><span class="fui-search"></span> 日语音训查询</h2>
+      <div class="searchbar container-fluid">
+        <div class="row">
+          <div class="searchbox col-md-6">
+            <div class="input-group">
+              <input type="text" class="form-control searchinput" placeholder="词条查询  ╰(◕ᗜ◕)╯" id="search-query-3"/>
+              <span class="input-group-btn">
+                <button type="submit" class="btn"><span class="fui-search"></span></button>
+              </span>
+            </div>
+          </div>
+          <div class="selectbox col-md-4">
+            <select name="" id="searchmode" class="searchmode form-control select select-primary select-block mbl">
+                <option value="rootmode">训 读 词 根</option>
+				<option value="affixmode">训 读 词 缀</option>
+                <option value="wordmode">音 读</option>
+                <!-- <option value="characteristicmode">按词性检索</option> -->
+            </select>
+
+          </div>
+          <div class="searchbtnbox col-md-2">
+            <button class="btn btn-wide btn-primary mrm" id="saveBtn">查 詢　<span class="fui-search"></span></button>
+          </div>
+        </div>
+		  <p class="text-center"><br><b>© 2018-2019 Na²si, Edgelight "JprootProj."</b><br><br><img src='src/logoNNSw.png' /><b>　×　</b><img src='src/logoELw.png' /></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flat-ui.min.js"></script>
+  <script src="js/js.cookie.js"></script>
+  <script src="js/root.js"></script>
+  <script src="js/affix.js"></script>
+  <script src="js/word.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
