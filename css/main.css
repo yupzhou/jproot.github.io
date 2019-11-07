@@ -1,13 +1,14 @@
 ﻿*{margin: 0; 
 border: 0; 
 padding: 0;
-font-family: Cambria, H-云林黑体, 微软雅黑; /**/}
+font-family: Cambria, H-云林黑体, 微软雅黑 Light; /**/
+}
 ::-webkit-scrollbar {
-/*display: none;隐藏滚轮*/
+/*display: none;隐藏滚轮 */
 }
 .bg1{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: $(window).height();
  //   background-color: #A3FFD6;
     background-image: url('../src/fuji.jpg');
   background-size: 100% ;
@@ -21,7 +22,7 @@ content: "";
   height: 100%;
 position:absolute;
 left:0; top:0;
-  background: inherit;
+background: inherit;
 filter: blur(7px);
 z-index:2;
 }
