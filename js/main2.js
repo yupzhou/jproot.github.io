@@ -26,11 +26,11 @@ $(".searchmethod").click(function() {
     $('.articlebox').show();
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
- //   $('.otherbox').hide();
+    $('.otherbox').hide();
     $('.helpbox').hide();
     writedata(rootdata);
     $('.searchlist').empty();
-    $('.searchinput2').attr('placeholder','训读或汉字查询');
+    $('.searchinput2').attr('placeholder','訓讀或漢字查詢');
     $('.listsearchbox').show();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
@@ -38,14 +38,14 @@ $(".searchmethod").click(function() {
     searchlock = false;
     search_mode = $(this).attr('data-mod');
     $('.articlebox').show();
-    $('.searchinput2').attr('placeholder','词缀查询');
+    $('.searchinput2').attr('placeholder','訓讀詞綴查詢');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(affixdata);
     $('.searchlist').empty();
-    $('.searchinput')[0].value = '';
+    $('.searchinput2')[0].value = '';
     $('.listsearchbox').show();
- //   $('.otherbox').hide();
+    $('.otherbox').hide();
     $('.helpbox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
@@ -53,13 +53,14 @@ $(".searchmethod").click(function() {
     searchlock = false;
     search_mode = $(this).attr('data-mod');
     $('.articlebox').show();
+    $('.searchinput2').attr('placeholder','漢字查詢');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(worddata);
     $('.searchlist').empty();
     $('.searchinput2')[0].value = '';
     $('.listsearchbox').show();
- //   $('.otherbox').hide();
+    $('.otherbox').hide();
     $('.helpbox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
@@ -92,7 +93,6 @@ $(".searchmethod").click(function() {
 })
 //----------------------------------------------------------------------------------//
 var indexposition = 'node1';   //目录高亮位置
-
 // 目录点击跳转
 $('.indexlink').click(function() {
   if ($(this).hasClass('indexlink-active')) {
@@ -149,7 +149,6 @@ $('#indexbtn').click(function() {
     indexinsopen = true;
   }
 })
-
 
 //注册前两页展开箭头
 function bindarrow() {
@@ -231,7 +230,7 @@ content正文*/
 */
 //分类标题数组
 var classwords = [
-                  '解说','ア','イ','ウ','エ','オ',
+                  '說明','ア','イ','ウ','エ','オ',
                   'カ','キ','ク','ケ','コ',
                   'サ','シ','ス','セ','ソ',
                   'タ','チ','ツ','テ','ト',
@@ -245,11 +244,11 @@ var classwords = [
 //写入字典数据到页面
 function writedata(dicdata) {
   $('.articlebox').empty();
-  var nowclass = 1;   //当前类别，默认从ア（class=1）开始读取
+  var nowclass = 1;   //当前类别，默认从ア類（class=1）开始读取
   var nowdatanum = 0; //当前数据序号
   var nodestr = ""   //处理用字符串
   //为第一组数据写入nodestr(注意使用单引号)
-  nodestr = '<div class="headclass" id="node1"><h4 class="headtitle">▶ 解 说</h4><div class="headline"></div>';
+  nodestr = '<div class="headclass" id="node1"><h4 class="headtitle">☯ 說 明</h4><div class="headline"></div>';
   for (var i = 0; i <= dicdata.length; i++) {
     // console.log(dicdata[i]);
     var nowdata = dicdata[i];
@@ -261,7 +260,7 @@ function writedata(dicdata) {
     }else{   //若nowclass与当前class不相同
        nodestr = nodestr + '</div>';
        $('.articlebox').append(nodestr);
-       nodestr = '<div class="headclass" id="node' + nowdata.class + '"><h4 class="headtitle">▶ ' + classwords[nowdata.class-1] + '</h4><div class="headline"></div>';
+       nodestr = '<div class="headclass" id="node' + nowdata.class + '"><h4 class="headtitle">☯ ' + classwords[nowdata.class-1] + ' 類</h4><div class="headline"></div>';
        nodestr = nodestr + '<div class="rootbox" data-ser=" ' + i + ' "><div class="roottitle">' + nowdata.title  + '<span class="rootsummary">' + nowdata.summary + '</span><span class="arrow"></span></div><div class="rootcontent" style="display:none;">' + nowdata.content + '</div></div>';
        nowclass = nowdata.class;
     }
@@ -284,14 +283,13 @@ $('#saveBtn').click(function() {
   window.location.href = "./dictionary.html";
   
 })
-
 //注册首页回车
 $("#search-query-3").keydown(function (e) {
     if (e.keyCode == 13) {
       if (searchlock) {
         return;
       }
-      searchlock = false;
+      searchlock = true;
       var searchword = $(".searchinput")[0].value;
       window.localStorage.setItem("searchword",searchword);
       window.localStorage.setItem("searchmode",search_mode);
@@ -419,18 +417,18 @@ bindtotop();
 
 
 //首頁更換圖片
-/*function randindexbg() {
+function randindexbg() {
   var ind = Math.random()*4;
   if (ind <= 1) {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("src/bg1.png")');
   }else if (ind <= 2)  {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("src/bg1.png")');
   }else if (ind <= 3)  {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("src/bg1.png")');
   }else if (ind <= 4)  {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("src/bg1.png")');
   }
-}*/
+}
 randindexbg();
 // 注册右方搜索
 $('#searchbtn2').click(function() {

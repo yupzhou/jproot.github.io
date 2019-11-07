@@ -39,7 +39,10 @@
         }
     },
     "mouseover": [
-        { "selector": ".container a[href^='http']", "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"] },
+        { "selector": "#dicsearch", "text": ["我帮你找哦~"] },
+        { "selector": ".listsearchbox",  "text": ["在找什么东西呢，需要帮忙吗？"] },
+        { "selector": ".dicindex",  "text": ["这里是目录"] },
+        { "selector": ".navbar-brand",  "text": ["返回首页哦"] },
         { "selector": ".fui-home", "text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦"] },
         { "selector": ".fui-chat", "text": ["一言一语，一颦一笑。一字一句，一颗赛艇。"] },
         { "selector": ".fui-eye", "text": ["嗯··· 要切换 看板娘 吗？"] },
@@ -63,31 +66,23 @@
         { "selector": "input[name=s]", "text": ["找不到想看的内容？搜索看看吧"] },
         { "selector": ".previous", "text": ["去上一页看看吧"] },
         { "selector": ".next", "text": ["去下一页看看吧"] },
-        { "selector": ".dropdown-toggle", "text": ["这里是菜单"] },
+        { "selector": ".searchmethod", "text": ["这里是菜单"] },
         { "selector": "c-player a.play-icon", "text": ["想要听点音乐吗"] },
         { "selector": "c-player div.time", "text": ["在这里可以调整<span style=\"color:#0099cc;\">播放进度</span>呢"] },
         { "selector": "c-player div.volume", "text": ["在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢"] },
         { "selector": "c-player div.list-button", "text": ["<span style=\"color:#0099cc;\">播放列表</span>里都有什么呢"] },
         { "selector": "c-player div.lyric-button", "text": ["有<span style=\"color:#0099cc;\">歌词</span>的话就能跟着一起唱呢"] },
-        { "selector": ".waifu #live2d", "text": ["干嘛呢你，快把手拿开", "鼠…鼠标放错地方了！"] }
+        { "selector": ".waifu #live2d", "text": ["继续，不要停", "鼠…鼠标放对地方了！"] }
     ],
     "click": [
         {
             "selector": ".waifu #live2d",
             "text": [
-                "是…是不小心碰到了吧",
+                "是…是不小心碰到的吗",
                 "萝莉控是什么呀",
-                "你看到我的小熊了吗",
-                "再摸的话我可要报警了！⌇●﹏●⌇",
-                "110吗，这里有个变态一直在摸我(ó﹏ò｡)",
-"嗯♀~", 
-"啊♀~", 
-"不要动手动脚的！快把手拿开~~チラッ", 
-"真…真的是不知羞耻！但是我喜欢",
-"Hentai! Hentai!", "再摸的话……我可要报警了！⌇●﹏●⌇", 
-"110吗，这里有个变态一直在摸我(ó﹏ò｡)", 
-"乖♀乖♀站♀好", "Ass♀We♀Can", 
-"警察先生! 就是这个人", 
+                "多摸摸我呦~",
+"嗯♀~", "啊♀~", "真…真的是不知羞耻！但是我喜欢","Hentai! Hentai!", 
+"乖♀乖♀站♀好", "Ass♀We♀Can", "警察先生! 就是这个人", 
 "Do you like van♀游戏？"
             ]
         }
