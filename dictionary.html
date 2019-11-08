@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
@@ -25,12 +25,12 @@
           <li class="searchmethod" data-mod="affixmode"><a href="javascript:void(0);">训读词缀</a></li>
           <li class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);">广韵音读</a></li>
           <li class="searchmethod" data-mod="othermode"><a href="javascript:void(0);">日语之道</a></li>
-          <li class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);">关于本站</a></li>
+          <li class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);">使用帮助</a></li>
         </ul>
           <div class="navbar-form navbar-left" action="#" role="search" href="javascript:void(0);">
             <div class="form-group">
               <div class="input-group" id="dicsearch">
-                <input class="form-control searchinput" type="search" placeholder="词条查询 ╰(◕ᗜ◕)╯"/>
+                <input class="form-control searchinput" type="search" placeholder="Search..."/>
                 <span class="input-group-btn" style="width:37px;">
                   <button type="btn" class="btn" id="searchbtn"><span class="fui-search"></span></button>
                 </span>
@@ -352,31 +352,90 @@
     <!-- 關於 -->
     <div class="helpbox" style="display:none">
       <div class="headclass" id="node1">
-          <h4 class="headtitle">▶ 關於</h4>
+          <h4 class="headtitle">▶ 使用帮助</h4>
           <div class="headline"></div>
+		  
+		  <div class="rootbox">
+		      <div class="roottitle">包含内容<span class="arrow"></span></div>
+		      <div class="rootcontent" style="display:none;"></br>
+			  <ul><li>以词根为中心的派生词汇表</li>
+<li>列出各词缀的功能</li>
+<li>将日本汉字音按《广韵》分类</li>
+<li>日语简史</li>
+			  </div>
+		  </div>
+		  
+		  <div class="rootbox">
+		  		      <div class="roottitle">查询功能<span class="arrow"></span></div>
+		  		      <div class="rootcontent" style="display:none;"></br>
+		  			  <ul><li>首页支持假名、汉字</li>
+		  <li>训读页、词缀页功能栏、右侧搜索栏支持假名</li>
+		  <li>音读页功能栏、右侧搜索栏支持支持汉字</li>
+		  <li>平假名、片假名转换支持</li>
+		  			  </div>
+		  		  </div>
+		  
           <div class="rootbox">
-              <div class="roottitle">表示上的說明<span class="arrow"></span></div>
-              <div class="rootcontent" style="display:none;">訓讀頁面和音讀頁面的羅馬字表示並不一致，主要表現在濁化音的表示和元音數量上：訓讀頁面的濁化音一般用n/m+清音表示，音讀頁面的濁化音一般用清音對應的濁音表示；訓讀頁面出現的元音有9種，音讀頁面出現的元音有5種。</div>
+              <div class="roottitle">罗马字<span class="arrow"></span></div>
+              <div class="rootcontent" style="display:none;"></br><b>祖语词根罗马字</b>
+			  <ul><li>浊塞音统一写成前置鼻音化的清塞音的形式</li><li>祖语单元音为a, i, u, o，双元音为ai, ia > e; ui, oi > i; ua > o，不明确或不区分的e, i, o，直接写成e, i, o</li>
+			  <b>音读罗马字</b><ul><li>浊塞音统一写成浊音</li><li>元音为a, i, u, e, o五种</li>
+			  </div>
           </div>
+		  
+		  <div class="rootbox">
+		      <div class="roottitle">参照<span class="arrow"></span></div>
+		      <div class="rootcontent" style="display:none;"></br>
+			  <b>日本祖语的构拟　</b>2003 S. A. Starostin, A. V. Dybo, O. A. Mudrak (with the assistance of I. Gruntov and V. Glumov) An Etymological Dictionary of Altaic Languages<br>
+			  <b>日语词典　</b>类聚名義抄、岩波書店广辞苑第六版、小学馆中日词典<br>
+			  <b>琉球方言　</b>1999-2003 Okinawa Center of Language Study <a href='http://ryukyu-lang.lib.u-ryukyu.ac.jp/index.html' target='_blank'>琉球語音声データベース</a><br>
+			  <b>语系对比　</b>1998-2005 Sergei Starostin, 2006-2013 George Starostin <a href='http://starling.rinet.ru/' target='_blank'>The Tower of Babel</a><br>
+			  <b>上古汉语　</b>2014 William H. Baxter and Laurent Sagart <a href='http://ocbaxtersagart.lsait.lsa.umich.edu/' target='_blank'>The Baxter-Sagart reconstruction of Old Chinese (Version 1.1, 20 September 2014)</a><br>
+			  <b>广韵　</b>2014 poem <a href='https://zhuanlan.zhihu.com/p/19853944' target='_blank'>聲形析微表(201409)</a><br>
+			  <b>中古汉语、日语音读　</b>2016 Maigo <a href='https://www.guokr.com/post/577961/' target='_blank'>漢字古今中外讀音查詢 V3.0 (app)</a><br>
+			  <b>日语历史　</b><a href='https://ja.wikipedia.org/' target='_blank'>ウィキペディア</a></div>
+		  </div>
+		  
+		  <div class="rootbox">
+		      <div class="roottitle">引用<span class="arrow"></span></div>
+			  <div class="rootcontent" style="display:none;"></br>
+		      <b>Live2D　</b>fghrsh <a href='https://github.com/fghrsh' target='_blank'>Live2D 看板娘插件</a><br>
+			  <b>封面　</b>WP Chun from Pixabay <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3571759' target='_blank'>Mount Fuji</a><br>
+			  </div>
+		  </div>
+		  
           <div class="rootbox">
               <div class="roottitle">原著<span class="arrow"></span></div>
-              <div class="rootcontent" style="display:none;">★ 本站内容基於站長原著《日語音訓》，收錄了未登載於本站的豐富內容。詳情請戳→<a href='src/.png' target='_blank'>站長小廣告</a></div>
+              <div class="rootcontent" style="display:none;"></br>★　本站内容基于站长原著《日语音训》<s>未写完</s>，收录了未登载于本站的丰富內容。详情请戳→<a href='src/.png' target='_blank'>站长小广告</a><s>未制作</s></div>
           </div>
+		  
           <div class="rootbox">
-              <div class="roottitle">關於本站<span class="arrow"></span></div>
-              <div class="rootcontent" style="display:none;"><b>[站長・繪師] </b>2018 Na²si (Nanasi)<br><b>[網頁製作、網頁維護] </b>2018 Edgelight</div>
+              <div class="roottitle">关于本站<span class="arrow"></span></div>
+              <div class="rootcontent" style="display:none;"></br><b>站长　</b>"Na²si (Nanasi)" Yupzhou<br>
+			  <b>网页框架制作　</b>Edgelight</div>
           </div>
-		  <div class="rootbox">
-              <div class="roottitle">首頁作品集 (更新中)<span class="arrow"></span></div>
-              <div class="rootcontent" style="display:none;">20180707 Tanabata</div>
-          </div>
+
 	   <div class="rootbox">
-              <div class="roottitle">更新履歷<span class="arrow"></span></div>
-              <div class="rootcontent" style="display:none;"><b>[2018-05-20] </b>計劃中<br><b>[2018-05-22] </b>基本框架搭建；增加搜索按鈕<br><b>[2018-05-23] </b>增加附錄和關於頁面<br><b>[2018-05-24] </b>錄入音讀內容；修改網頁目錄<br><b>[2018-05-25] </b>添加圖片資源；總體框架完成<br><b>[2018-05-26] </b>添加側欄訓讀、單漢字搜索功能；添加假名轉換；錄入附錄內容<br><b>[2018-05-28] </b>修改配色及圖片形式<br><b>[2018-07-07] </b>繪製首頁插圖<br><b>[2018-07-11] </b>添加側欄按漢字搜索訓讀功能<br><b>[2018-07-11] </b>開設訓讀詞綴頁面</div>
+              <div class="roottitle">更新履历<span class="arrow"></span></div>
+              <div class="rootcontent" style="display:none;"></br>
+				  <b>[2018-05-20]　</b>计划中<br>
+				  <b>[2018-05-22]　</b>框架搭建、首页和功能栏搜索<br>
+				  <b>[2018-05-23]　</b>增设附录页、关于页<br>
+				  <b>[2018-05-24]　</b>目录<br>
+				  <b>[2018-05-25]　</b>封面<br>
+				  <b>[2018-05-26]　</b>侧栏假名搜索、假名转换<br>
+				  <b>[2018-05-28]　</b>修改css<br>
+				  <b>[2018-07-07]　</b>首页插绘<s>已替换</s><br>
+				  <b>[2018-07-11]　</b>侧栏汉字搜索、增设词缀页、1.0版本沉睡<br>
+				  <b>[一年<s>还多一季</s>后] </b><br>
+				  <b>[2019-11-04]　</b>嵌入live2d<br>
+				  <b>[2019-11-05]　</b>2.0版本部署github<br>
+				  <b>[2019-11-06]　</b>修改css<br>
+				  <b>[2019-11-08]　</b>2.1版本<br></div>
           </div>
        </div>
 
-<br><img src='src/logoNNS.png' /><br><b>×</b><br><img src='src/logoEL.png' />
+<br>© 2018-2019 "Na²si (Nanasi)" Yupzhou, Edgelight "JPRootProj."<br><br><img src='src/logoNNS.png' /><br><b>×</b><br><img src='src/logoEL.png' />
 
     </div>
 
@@ -385,54 +444,53 @@
   <div class="tile dicindex">
     <h3 class="tile-title">目录</h3>
     <div class="indexbox">
-	    <a class="indexlink login-link indexlink-active" data-node="node1">◎ 说明</a>
-      <a class="indexlink login-link " data-node="node2">◎ ア</a>
-      <a class="indexlink login-link" data-node="node3">◎ イ</a>
-      <a class="indexlink login-link" data-node="node4">◎ ウ</a>
-      <a class="indexlink login-link" data-node="node5">◎ エ</a>
-      <a class="indexlink login-link" data-node="node6">◎ オ</a>
-      <a class="indexlink login-link" data-node="node7">◎ カ</a>
-      <a class="indexlink login-link" data-node="node8">◎ キ</a>
-      <a class="indexlink login-link" data-node="node9">◎ ク</a>
-      <a class="indexlink login-link" data-node="node10">◎ ケ</a>
-      <a class="indexlink login-link" data-node="node11">◎ コ</a>
-      <a class="indexlink login-link" data-node="node12">◎ サ</a>
-      <a class="indexlink login-link" data-node="node13">◎ シ</a>
-      <a class="indexlink login-link" data-node="node14">◎ ス</a>
-      <a class="indexlink login-link" data-node="node15">◎ セ</a>
-      <a class="indexlink login-link" data-node="node16">◎ ソ</a>
-      <a class="indexlink login-link" data-node="node17">◎ タ</a>
-      <a class="indexlink login-link" data-node="node18">◎ チ</a>
-      <a class="indexlink login-link" data-node="node19">◎ ツ</a>
-      <a class="indexlink login-link" data-node="node20">◎ テ</a>
-      <a class="indexlink login-link" data-node="node21">◎ ト</a>
-      <a class="indexlink login-link" data-node="node22">◎ ナ</a>
-      <a class="indexlink login-link" data-node="node23">◎ ニ</a>
-      <a class="indexlink login-link" data-node="node24">◎ ヌ</a>
-      <a class="indexlink login-link" data-node="node25">◎ ネ</a>
-      <a class="indexlink login-link" data-node="node26">◎ ノ</a>
-      <a class="indexlink login-link" data-node="node27">◎ ハ</a>
-      <a class="indexlink login-link" data-node="node28">◎ ヒ</a>
-      <a class="indexlink login-link" data-node="node29">◎ フ</a>
-      <a class="indexlink login-link" data-node="node30">◎ ヘ</a>
-      <a class="indexlink login-link" data-node="node31">◎ ホ</a>
-      <a class="indexlink login-link" data-node="node32">◎ マ</a>
-      <a class="indexlink login-link" data-node="node33">◎ ミ</a>
-      <a class="indexlink login-link" data-node="node34">◎ ム</a>
-      <a class="indexlink login-link" data-node="node35">◎ メ</a>
-      <a class="indexlink login-link" data-node="node36">◎ モ</a>
-      <a class="indexlink login-link" data-node="node37">◎ ヤ</a>
-      <a class="indexlink login-link" data-node="node38">◎ ユ</a>
-      <a class="indexlink login-link" data-node="node39">◎ ヨ</a>
-      <a class="indexlink login-link" data-node="node40">◎ ラ</a>
-      <a class="indexlink login-link" data-node="node41">◎ リ</a>
-      <a class="indexlink login-link" data-node="node42">◎ ル</a>
-      <a class="indexlink login-link" data-node="node43">◎ レ</a>
-      <a class="indexlink login-link" data-node="node44">◎ ロ</a>
-      <a class="indexlink login-link" data-node="node45">◎ ワ</a>
-      <a class="indexlink login-link" data-node="node46">◎ ヰ</a>
-      <a class="indexlink login-link" data-node="node47">◎ ヱ</a>
-      <a class="indexlink login-link" data-node="node48">◎ ヲ</a>
+      <a class="indexlink login-link " data-node="node1">⚝ ア a</a>
+      <a class="indexlink login-link" data-node="node2">⚝ イ i</a>
+      <a class="indexlink login-link" data-node="node3">⚝ ウ u</a>
+      <a class="indexlink login-link" data-node="node4">⚝ エ e</a>
+      <a class="indexlink login-link" data-node="node5">⚝ オ o</a>
+      <a class="indexlink login-link" data-node="node6">⚝ カ ka</a>
+      <a class="indexlink login-link" data-node="node7">⚝ キ ki</a>
+      <a class="indexlink login-link" data-node="node8">⚝ ク ku</a>
+      <a class="indexlink login-link" data-node="node9">⚝ ケ ke</a>
+      <a class="indexlink login-link" data-node="node10">⚝ コ ko</a>
+      <a class="indexlink login-link" data-node="node11">⚝ サ sa</a>
+      <a class="indexlink login-link" data-node="node12">⚝ シ si</a>
+      <a class="indexlink login-link" data-node="node13">⚝ ス su</a>
+      <a class="indexlink login-link" data-node="node14">⚝ セ se</a>
+      <a class="indexlink login-link" data-node="node15">⚝ ソ so</a>
+      <a class="indexlink login-link" data-node="node16">⚝ タ ta</a>
+      <a class="indexlink login-link" data-node="node17">⚝ チ ti</a>
+      <a class="indexlink login-link" data-node="node18">⚝ ツ tu</a>
+      <a class="indexlink login-link" data-node="node19">⚝ テ te</a>
+      <a class="indexlink login-link" data-node="node20">⚝ ト to</a>
+      <a class="indexlink login-link" data-node="node21">⚝ ナ na</a>
+      <a class="indexlink login-link" data-node="node22">⚝ ニ ni</a>
+      <a class="indexlink login-link" data-node="node23">⚝ ヌ nu</a>
+      <a class="indexlink login-link" data-node="node24">⚝ ネ ne</a>
+      <a class="indexlink login-link" data-node="node25">⚝ ノ no</a>
+      <a class="indexlink login-link" data-node="node26">⚝ ハ pa</a>
+      <a class="indexlink login-link" data-node="node27">⚝ ヒ pi</a>
+      <a class="indexlink login-link" data-node="node28">⚝ フ pu</a>
+      <a class="indexlink login-link" data-node="node29">⚝ ヘ pe</a>
+      <a class="indexlink login-link" data-node="node30">⚝ ホ po</a>
+      <a class="indexlink login-link" data-node="node31">⚝ マ ma</a>
+      <a class="indexlink login-link" data-node="node32">⚝ ミ mi</a>
+      <a class="indexlink login-link" data-node="node33">⚝ ム mu</a>
+      <a class="indexlink login-link" data-node="node34">⚝ メ me</a>
+      <a class="indexlink login-link" data-node="node35">⚝ モ mo</a>
+      <a class="indexlink login-link" data-node="node36">⚝ ヤ ja</a>
+      <a class="indexlink login-link" data-node="node37">⚝ ユ ju</a>
+      <a class="indexlink login-link" data-node="node38">⚝ ヨ jo</a>
+      <a class="indexlink login-link" data-node="node39">⚝ ラ ra</a>
+      <a class="indexlink login-link" data-node="node40">⚝ リ ri</a>
+      <a class="indexlink login-link" data-node="node41">⚝ ル ru</a>
+      <a class="indexlink login-link" data-node="node42">⚝ レ re</a>
+      <a class="indexlink login-link" data-node="node43">⚝ ロ ro</a>
+      <a class="indexlink login-link" data-node="node44">⚝ ワ wa</a>
+      <a class="indexlink login-link" data-node="node45">⚝ ヰ wi</a>
+      <a class="indexlink login-link" data-node="node46">⚝ ヱ we</a>
+      <a class="indexlink login-link" data-node="node47">⚝ ヲ wo</a>
     </div>
     <a class="btn btn-primary btn-large btn-block" href="javascript:void(0);" id="indexbtn">收起</a>
   </div>

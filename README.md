@@ -17,7 +17,7 @@ by Yupzhou feat. EdgeLight
 ## 参考来源
 - 维基百科·维基词典
 - 2003 S. A. Starostin, A. V. Dybo, O. A. Mudrak (with the assistance of I. Gruntov and V. Glumov) An Etymological Dictionary of Altaic Languages
-- 類聚名義抄
+- 类聚名義抄
 - 2014 William H. Baxter and Laurent Sagart The Baxter-Sagart reconstruction of Old Chinese (Version 1.1, 20 September 2014)
 
 ## 引用

@@ -1,4 +1,4 @@
-﻿// 导入样式
+// 导入样式
 $('.input-group').on('focus', '.form-control', function () {
   $(this).closest('.input-group, .form-group').addClass('focus');
 }).on('blur', '.form-control', function () {
@@ -111,11 +111,11 @@ $('.indexlink').click(function() {
 $('.articlebox').scroll(function() {
   var scrolltop = [0];
   // 赋值
-  for (var i = 1; i < 49 ; i++) {//總數+1
+  for (var i = 1; i < 48 ; i++) {//總數+1
     scrolltop[i] = $("#node" + i).offset().top;
   }
   // 循环检查
-  for (var j = 48; j > 0; j--) {//總數
+  for (var j = 47; j > 0; j--) {//總數
     if (scrolltop[j] <= 192) {
       // console.log('node' + j);
       // console.log('$(".articlebox").scrollTop():' + $('.articlebox').scrollTop());
@@ -231,16 +231,16 @@ content正文*/
 */
 //分类标题数组
 var classwords = [
-                  '解说','ア','イ','ウ','エ','オ',
-                  'カ','キ','ク','ケ','コ',
-                  'サ','シ','ス','セ','ソ',
-                  'タ','チ','ツ','テ','ト',
-                  'ナ','ニ','ヌ','ネ','ノ',
-                  'ハ','ヒ','フ','ヘ','ホ',
-                  'マ','ミ','ム','メ','モ',
-                  'ヤ','ユ','ヨ',
-                  'ラ','リ','ル','レ','ロ',
-                  'ワ','ヰ','ヱ','ヲ'
+                  'ア　a','イ　i','ウ　u','エ　e','オ　o',
+                  'カ　ka','キ　ki','ク　ku','ケ　ke','コ　ko',
+                  'サ　sa','シ　si','ス　su','セ　se','ソ　so',
+                  'タ　ta','チ　ti','ツ　tu','テ　te','ト　to',
+                  'ナ　na','ニ　ni','ヌ　nu','ネ　ne','ノ　no',
+                  'ハ　pa','ヒ　pi','フ　pu','ヘ　pe','ホ　po',
+                  'マ　ma','ミ　mi','ム　mu','メ　me','モ　mo',
+                  'ヤ　ja','ユ　ju','ヨ　jo',
+                  'ラ　ra','リ　ri','ル　ru','レ　re','ロ　ro',
+                  'ワ　wa','ヰ　wi','ヱ　we','ヲ　wo'
                  ]
 //写入字典数据到页面
 function writedata(dicdata) {
@@ -249,7 +249,7 @@ function writedata(dicdata) {
   var nowdatanum = 0; //当前数据序号
   var nodestr = ""   //处理用字符串
   //为第一组数据写入nodestr(注意使用单引号)
-  nodestr = '<div class="headclass" id="node1"><h4 class="headtitle">▶ 解 说</h4><div class="headline"></div>';
+  nodestr = '<div class="headclass" id="node1"><h4 class="headtitle">▶ ア　a</h4><div class="headline"></div>';
   for (var i = 0; i <= dicdata.length; i++) {
     // console.log(dicdata[i]);
     var nowdata = dicdata[i];
