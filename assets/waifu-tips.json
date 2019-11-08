@@ -68,7 +68,7 @@
         { "selector": "input[name=s]", "text": ["找不到想看的内容？搜索看看吧"] },
         { "selector": ".previous", "text": ["去上一页看看吧"] },
         { "selector": ".next", "text": ["去下一页看看吧"] },
-        { "selector": ".searchmethod", "text": ["这里是菜单~"] },
+        { "selector": ".searchmethod", "text": ["这里是菜单~<br>有问题先看下使用说明哟"] },
         { "selector": "c-player a.play-icon", "text": ["想要听点音乐吗"] },
         { "selector": "c-player div.time", "text": ["在这里可以调整<span style=\"color:#0099cc;\">播放进度</span>呢"] },
         { "selector": "c-player div.volume", "text": ["在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢"] },
