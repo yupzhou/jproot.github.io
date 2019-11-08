@@ -46,7 +46,7 @@
 		{ "selector": ".helpbox",  "text": ["先来看下使用说明吧"] },
 		{ "selector": ".otherbox",  "text": ["日语简史哦"] },
         { "selector": ".fui-home", "text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦"] },
-        { "selector": ".fui-chat", "text": ["一言一语，一颦一笑。一字一句，一颗赛艇。"] },
+        { "selector": ".fui-chat", "text": ["乖♀乖♀站♀好"] },
         { "selector": ".fui-eye", "text": ["嗯··· 要切换 看板娘 吗？"] },
         { "selector": ".fui-user", "text": ["喜欢换装 Play 吗？"] },
         { "selector": ".fui-photo", "text": ["要拍张纪念照片吗？"] },
@@ -68,7 +68,7 @@
         { "selector": "input[name=s]", "text": ["找不到想看的内容？搜索看看吧"] },
         { "selector": ".previous", "text": ["去上一页看看吧"] },
         { "selector": ".next", "text": ["去下一页看看吧"] },
-        { "selector": ".searchmethod", "text": ["这里是菜单，有问题先看下使用说明哦"] },
+        { "selector": ".searchmethod", "text": ["这里是菜单~"] },
         { "selector": "c-player a.play-icon", "text": ["想要听点音乐吗"] },
         { "selector": "c-player div.time", "text": ["在这里可以调整<span style=\"color:#0099cc;\">播放进度</span>呢"] },
         { "selector": "c-player div.volume", "text": ["在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢"] },
@@ -90,17 +90,6 @@
         }
     ],
     "seasons": [
-        { "date": "01/01", "text": ["<span style=\"color:#0099cc;\">元旦</span>了呢，新的一年又开始了，今年是{year}年~"] },
-        { "date": "02/14", "text": ["又是一年<span style=\"color:#0099cc;\">情人节</span>，{year}年找到对象了嘛~"] },
-        { "date": "03/08", "text": ["今天是<span style=\"color:#0099cc;\">妇女节</span>！"] },
-        { "date": "03/12", "text": ["今天是<span style=\"color:#0099cc;\">植树节</span>，要保护环境呀"] },
-        { "date": "04/01", "text": ["悄悄告诉你一个秘密~<span style=\"background-color:#34495e;\">今天是愚人节，不要被骗了哦~</span>"] },
-        { "date": "05/01", "text": ["今天是<span style=\"color:#0099cc;\">五一劳动节</span>，计划好假期去哪里了吗~"] },
-        { "date": "06/01", "text": ["<span style=\"color:#0099cc;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"] },
-        { "date": "09/03", "text": ["<span style=\"color:#0099cc;\">中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"] },
-        { "date": "09/10", "text": ["<span style=\"color:#0099cc;\">教师节</span>，在学校要给老师问声好呀~"] },
-        { "date": "10/01", "text": ["<span style=\"color:#0099cc;\">国庆节</span>，新中国已经成立69年了呢"] },
-        { "date": "11/05-11/12", "text": ["今年的<span style=\"color:#0099cc;\">双十一</span>是和谁一起过的呢~"] },
-        { "date": "12/20-12/31", "text": ["这几天是<span style=\"color:#0099cc;\">圣诞节</span>，主人肯定又去剁手买买买了~"] }
+        { "date": "1/1-12/31", "text": ["你好呀，欢迎来到敝站~"] }
     ]
 }
