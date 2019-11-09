@@ -7,6 +7,7 @@ $('.input-group').on('focus', '.form-control', function () {
 $("select").select2({dropdownCssClass: 'dropdown-inverse'});
 var hasbind_other = false;
 var hasbind_help = false;
+var hasbind_dia = false;
 var search_mode = 'rootmode'; //搜索方式
 //首页下拉菜单
 $('#searchmode').change(function(event) {
@@ -26,8 +27,9 @@ $(".searchmethod").click(function() {
     $('.articlebox').show();
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
- //   $('.otherbox').hide();
+    $('.otherbox').hide();
     $('.helpbox').hide();
+	$('.diabox').hide();
     writedata(rootdata);
     $('.searchlist').empty();
     $('.searchinput2').attr('placeholder','训读或汉字查询');
@@ -45,8 +47,9 @@ $(".searchmethod").click(function() {
     $('.searchlist').empty();
     $('.searchinput')[0].value = '';
     $('.listsearchbox').show();
- //   $('.otherbox').hide();
+    $('.otherbox').hide();
     $('.helpbox').hide();
+	$('.diabox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "wordmode") {
@@ -59,8 +62,9 @@ $(".searchmethod").click(function() {
     $('.searchlist').empty();
     $('.searchinput2')[0].value = '';
     $('.listsearchbox').show();
- //   $('.otherbox').hide();
+    $('.otherbox').hide();
     $('.helpbox').hide();
+	$('.diabox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "othermode") {  //附錄
@@ -69,26 +73,42 @@ $(".searchmethod").click(function() {
     $('.otherbox').show();
     $('.helpbox').hide();
     $('.indexbox').hide();
-    $('.searchinput2')[0].value = '';
+	$('.diabox').hide();
     $('.listsearchbox').hide();
     $('.dicindex').css("visibility","hidden");
     if (!hasbind_other) {
       bindarrow_other();
       hasbind_other = true;
     }
-  }else {  //關於
+  
+  }else if ($(this).attr('data-mod') == "diamode"){  //方言·音调
     searchlock = true;
     $('.articlebox').hide();
     $('.otherbox').hide();
-    $('.helpbox').show();
+    $('.helpbox').hide();
     $('.indexbox').hide();
+	$('.diabox').show();
     $('.listsearchbox').hide();
     $('.dicindex').css("visibility","hidden");
-    if (!hasbind_help) {
-      bindarrow_help();
-      hasbind_help = true;
+    if (!hasbind_dia) {
+      bindarrow_dia();
+      hasbind_dia = true;
     }
+	}else if ($(this).attr('data-mod') == "helpmode"){  //關於
+	  searchlock = true;
+	  $('.articlebox').hide();
+	  $('.otherbox').hide();
+	  $('.helpbox').show();
+	  $('.indexbox').hide();
+		$('.diabox').hide();
+	  $('.listsearchbox').hide();
+	  $('.dicindex').css("visibility","hidden");
+	  if (!hasbind_help) {
+	    bindarrow_help();
+	    hasbind_help = true;
+	  }
   }
+  
 })
 //----------------------------------------------------------------------------------//
 var indexposition = 'node1';   //目录高亮位置
@@ -189,7 +209,18 @@ function bindarrow_help() {
     }
   })
 }
-
+function bindarrow_dia() {
+  $('.diabox').children().children().children().children('.arrow').click(function() {
+    console.log($(this).hasClass('arrow-open'));
+    if ($(this).hasClass('arrow-open')) {
+      $(this).removeClass('arrow-open');
+      $(this).parent().next().hide();
+    }else {
+      $(this).addClass('arrow-open');
+      $(this).parent().next().show();
+    }
+  })
+}
 // 点击rootbox任意位置展开（选中时易误触）
 // $('.rootbox').click(function() {
 //   if ($(this).children().children('.arrow').hasClass('arrow-open')) {
@@ -411,6 +442,7 @@ function bindtotop() {
     $(".articlebox").animate({scrollTop:0},350);
     $(".otherbox").animate({scrollTop:0},350);
     $(".helpbox").animate({scrollTop:0},350);
+	$(".diabox").animate({scrollTop:0},350);
   }
 )
 }
