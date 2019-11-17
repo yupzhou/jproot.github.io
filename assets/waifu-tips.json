@@ -75,7 +75,12 @@
         { "selector": "c-player div.volume", "text": ["在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢"] },
         { "selector": "c-player div.list-button", "text": ["<span style=\"color:#0099cc;\">播放列表</span>里都有什么呢"] },
         { "selector": "c-player div.lyric-button", "text": ["有<span style=\"color:#0099cc;\">歌词</span>的话就能跟着一起唱呢"] },
-        { "selector": ".waifu #live2d", "text": ["继续，不要停", "鼠…鼠标放对地方了！"] }
+        { "selector": ".waifu #live2d", "text": ["继续，不要停", "鼠…鼠标放对地方了！", "是…是不小心碰到的吗",
+                "萝莉控是什么呀",
+                "多摸摸我呦~",
+"嗯♀~", "啊♀~", "真…真的是不知羞耻！但是我喜欢","Hentai! Hentai!", 
+"乖♀乖♀站♀好", "As♀We♀Can", "警察先生! 就是这个人", 
+"Do you like van♀游戏？"] }
     ],
     "click": [
         {
