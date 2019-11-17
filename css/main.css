@@ -240,7 +240,7 @@ z-index:2;
 
 .listsearchbox{
   width:12vw;
-  height: 40vh;
+  height: 50vh;
   position: fixed;
   bottom: 0.8vh;
   right: 1vw;
@@ -331,4 +331,8 @@ background-color: #fff;
     color: #fff;
     background-color: #1abc9c;
 font-size: large;
+}
+
+.login-link {
+    background-color: rgba(256,256,256,0.8);
 }

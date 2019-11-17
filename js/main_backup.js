@@ -1,4 +1,4 @@
-﻿// 导入样式
+// 导入样式
 $('.input-group').on('focus', '.form-control', function () {
   $(this).closest('.input-group, .form-group').addClass('focus');
 }).on('blur', '.form-control', function () {
@@ -7,6 +7,7 @@ $('.input-group').on('focus', '.form-control', function () {
 $("select").select2({dropdownCssClass: 'dropdown-inverse'});
 var hasbind_other = false;
 var hasbind_help = false;
+var hasbind_dia = false;
 var search_mode = 'rootmode'; //搜索方式
 //首页下拉菜单
 $('#searchmode').change(function(event) {
@@ -28,6 +29,7 @@ $(".searchmethod").click(function() {
     $('.dicindex').css("visibility","visible");
     $('.otherbox').hide();
     $('.helpbox').hide();
+	$('.diabox').hide();
     writedata(rootdata);
     $('.searchlist').empty();
     $('.searchinput2').attr('placeholder','训读或汉字查询');
@@ -36,24 +38,24 @@ $(".searchmethod").click(function() {
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "affixmode") {
     searchlock = false;
-    search_mode = 'affixmode';
+    search_mode = $(this).attr('data-mod');
     $('.articlebox').show();
     $('.searchinput2').attr('placeholder','词缀查询');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(affixdata);
     $('.searchlist').empty();
-    $('.searchinput2')[0].value = '';
+    $('.searchinput')[0].value = '';
     $('.listsearchbox').show();
     $('.otherbox').hide();
     $('.helpbox').hide();
+	$('.diabox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "wordmode") {
     searchlock = false;
     search_mode = $(this).attr('data-mod');
     $('.articlebox').show();
-    $('.searchinput2').attr('placeholder','汉字查询');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(worddata);
@@ -62,6 +64,7 @@ $(".searchmethod").click(function() {
     $('.listsearchbox').show();
     $('.otherbox').hide();
     $('.helpbox').hide();
+	$('.diabox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "othermode") {  //附錄
@@ -70,14 +73,15 @@ $(".searchmethod").click(function() {
     $('.otherbox').show();
     $('.helpbox').hide();
     $('.indexbox').hide();
-    $('.searchinput2')[0].value = '';
+	$('.diabox').hide();
     $('.listsearchbox').hide();
     $('.dicindex').css("visibility","hidden");
     if (!hasbind_other) {
       bindarrow_other();
       hasbind_other = true;
     }
-}else if ($(this).attr('data-mod') == "diamode"){  //方言·音调
+  
+  }else if ($(this).attr('data-mod') == "diamode"){  //方言·音调
     searchlock = true;
     $('.articlebox').hide();
     $('.otherbox').hide();
@@ -108,6 +112,7 @@ $(".searchmethod").click(function() {
 })
 //----------------------------------------------------------------------------------//
 var indexposition = 'node1';   //目录高亮位置
+
 // 目录点击跳转
 $('.indexlink').click(function() {
   if ($(this).hasClass('indexlink-active')) {
@@ -165,6 +170,7 @@ $('#indexbtn').click(function() {
   }
 })
 
+
 //注册前两页展开箭头
 function bindarrow() {
   $('.articlebox').children().children().children().children('.arrow').click(function() {
@@ -203,7 +209,18 @@ function bindarrow_help() {
     }
   })
 }
-
+function bindarrow_dia() {
+  $('.diabox').children().children().children().children('.arrow').click(function() {
+    console.log($(this).hasClass('arrow-open'));
+    if ($(this).hasClass('arrow-open')) {
+      $(this).removeClass('arrow-open');
+      $(this).parent().next().hide();
+    }else {
+      $(this).addClass('arrow-open');
+      $(this).parent().next().show();
+    }
+  })
+}
 // 点击rootbox任意位置展开（选中时易误触）
 // $('.rootbox').click(function() {
 //   if ($(this).children().children('.arrow').hasClass('arrow-open')) {
@@ -259,7 +276,7 @@ var classwords = [
 //写入字典数据到页面
 function writedata(dicdata) {
   $('.articlebox').empty();
-  var nowclass = 1;   //当前类别，默认从ア類（class=1）开始读取
+  var nowclass = 1;   //当前类别，默认从ア（class=1）开始读取
   var nowdatanum = 0; //当前数据序号
   var nodestr = ""   //处理用字符串
   //为第一组数据写入nodestr(注意使用单引号)
@@ -275,7 +292,7 @@ function writedata(dicdata) {
     }else{   //若nowclass与当前class不相同
        nodestr = nodestr + '</div>';
        $('.articlebox').append(nodestr);
-       nodestr = '<div class="headclass" id="node' + nowdata.class + '"><h4 class="headtitle">▶ ' + classwords[nowdata.class-1] + ' </h4><div class="headline"></div>';
+       nodestr = '<div class="headclass" id="node' + nowdata.class + '"><h4 class="headtitle">▶ ' + classwords[nowdata.class-1] + '</h4><div class="headline"></div>';
        nodestr = nodestr + '<div class="rootbox" data-ser=" ' + i + ' "><div class="roottitle">' + nowdata.title  + '<span class="rootsummary">' + nowdata.summary + '</span><span class="arrow"></span></div><div class="rootcontent" style="display:none;">' + nowdata.content + '</div></div>';
        nowclass = nowdata.class;
     }
@@ -298,6 +315,7 @@ $('#saveBtn').click(function() {
   window.location.href = "./dictionary.html";
   
 })
+
 //注册首页回车
 $("#search-query-3").keydown(function (e) {
     if (e.keyCode == 13) {
@@ -424,6 +442,7 @@ function bindtotop() {
     $(".articlebox").animate({scrollTop:0},350);
     $(".otherbox").animate({scrollTop:0},350);
     $(".helpbox").animate({scrollTop:0},350);
+	$(".diabox").animate({scrollTop:0},350);
   }
 )
 }
@@ -443,8 +462,8 @@ bindtotop();
   }else if (ind <= 4)  {
     $('.box').css('background-image','url("../src/fuji.jpg")');
   }
-}
-randindexbg();*/
+}*/
+randindexbg();
 // 注册右方搜索
 $('#searchbtn2').click(function() {
   if (searchlock) {
