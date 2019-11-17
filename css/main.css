@@ -95,7 +95,7 @@ z-index:2;
   left: 1vw;
   box-shadow: 2px 2px 3px #aaaaaa;
   overflow-y: hidden;
-
+    background-color: rgba(240,240,240);
   transition:height 0.3s;
   -moz-transition:height 0.3s; /* Firefox 4 */
   -webkit-transition:height 0.3s; /* Safari and Chrome */
@@ -334,5 +334,5 @@ font-size: large;
 }
 
 .login-link {
-    background-color: rgba(256,256,256,0.8);
+    background-color: rgba(240,240,240,0.8);
 }
