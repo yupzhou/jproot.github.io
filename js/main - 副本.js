@@ -14,6 +14,7 @@ $('#searchmode').change(function(event) {
   search_mode = this.value;
 });
 
+
 //导航栏
 $(".searchmethod").click(function() {
   if (($(this).attr('data-mod') == search_mode) && ($('.dicindex').css("visibility") == "visible")) {

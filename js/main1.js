@@ -1,4 +1,4 @@
-// 导入样式
+﻿// 导入样式
 $('.input-group').on('focus', '.form-control', function () {
   $(this).closest('.input-group, .form-group').addClass('focus');
 }).on('blur', '.form-control', function () {
@@ -7,13 +7,11 @@ $('.input-group').on('focus', '.form-control', function () {
 $("select").select2({dropdownCssClass: 'dropdown-inverse'});
 var hasbind_other = false;
 var hasbind_help = false;
-var hasbind_dia = false;
 var search_mode = 'rootmode'; //搜索方式
 //首页下拉菜单
 $('#searchmode').change(function(event) {
   search_mode = this.value;
 });
-
 //导航栏
 $(".searchmethod").click(function() {
   if (($(this).attr('data-mod') == search_mode) && ($('.dicindex').css("visibility") == "visible")) {

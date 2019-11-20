@@ -1,3 +1,4 @@
+﻿
 // 导入样式
 $('.input-group').on('focus', '.form-control', function () {
   $(this).closest('.input-group, .form-group').addClass('focus');
@@ -13,6 +14,18 @@ var search_mode = 'rootmode'; //搜索方式
 $('#searchmode').change(function(event) {
   search_mode = this.value;
 });
+
+window.onresize = function(){
+if (window.innerWidth)
+   winWidth = window.innerWidth;
+else of((document.body)&&(document.body.clientWidth))
+   winWidth = document.body.clientWidth;
+if (winWidth<769px)
+  /*{
+    $('div.box').width: 100vw;
+    $('div.box').left: 0vw;
+  }*/
+};
 
 //导航栏
 $(".searchmethod").click(function() {
@@ -30,7 +43,6 @@ $(".searchmethod").click(function() {
     $('.dicindex').css("visibility","visible");
     $('.otherbox').hide();
     $('.helpbox').hide();
-	$('.diabox').hide();
     writedata(rootdata);
     $('.searchlist').empty();
     $('.searchinput2').attr('placeholder','训读或汉字查询');
@@ -39,24 +51,24 @@ $(".searchmethod").click(function() {
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "affixmode") {
     searchlock = false;
-    search_mode = $(this).attr('data-mod');
+    search_mode = 'affixmode';
     $('.articlebox').show();
     $('.searchinput2').attr('placeholder','词缀查询');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(affixdata);
     $('.searchlist').empty();
-    $('.searchinput')[0].value = '';
+    $('.searchinput2')[0].value = '';
     $('.listsearchbox').show();
     $('.otherbox').hide();
     $('.helpbox').hide();
-	$('.diabox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "wordmode") {
     searchlock = false;
     search_mode = $(this).attr('data-mod');
     $('.articlebox').show();
+    $('.searchinput2').attr('placeholder','汉字查询');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(worddata);
@@ -65,7 +77,6 @@ $(".searchmethod").click(function() {
     $('.listsearchbox').show();
     $('.otherbox').hide();
     $('.helpbox').hide();
-	$('.diabox').hide();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
   }else if ($(this).attr('data-mod') == "othermode") {  //附錄
@@ -74,15 +85,14 @@ $(".searchmethod").click(function() {
     $('.otherbox').show();
     $('.helpbox').hide();
     $('.indexbox').hide();
-	$('.diabox').hide();
+    $('.searchinput2')[0].value = '';
     $('.listsearchbox').hide();
     $('.dicindex').css("visibility","hidden");
     if (!hasbind_other) {
       bindarrow_other();
       hasbind_other = true;
     }
-  
-  }else if ($(this).attr('data-mod') == "diamode"){  //方言·音调
+}else if ($(this).attr('data-mod') == "diamode"){  //方言·音调
     searchlock = true;
     $('.articlebox').hide();
     $('.otherbox').hide();
