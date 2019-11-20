@@ -337,7 +337,7 @@ font-size: large;
     background-color: rgba(240,240,240,0.8);
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 1024px){
 	.box2{
 		width: 100vw;
 		left:0px;
@@ -349,10 +349,16 @@ font-size: large;
 		font-size:18px;
 	}
 	h2.index-title{
-		font-size:40px;
+		font-size:35px;
 	}
 	.box{
 		background-image: url('../src/girl.png');
+	}
+	img{
+		width: 50px;
+	}
+	.searchbar>p{
+		font-size: 13px;
 	}
 
 } 
