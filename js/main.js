@@ -422,6 +422,12 @@ if (jumpword !== null && jumpword != '') {
   if (search_mode == 'rootmode') {  //按词根搜索
     searchup(rootdata);
   }else if(search_mode == 'affixmode'){ //按词綴搜索
+	console.log('ss');
+	search_mode = "affixmode";
+	$('.searchmethod').removeClass('active');
+	$("[data-mod='affixmode']").addClass('active');
+	writedata(affixdata);
+	searchup(affixdata);
 	searchup(affixdata);
   }else{   //按单语搜索
     console.log('ss');
