@@ -348,5 +348,11 @@ font-size: large;
 	h4.headtitle, div.roottitle, span.rootsummary, div.rootcontent{
 		font-size:18px;
 	}
+	h2.index-title{
+		font-size:40px;
+	}
+	.box{
+		background-image: url('../src/girl.png');
+	}
 
 } 
