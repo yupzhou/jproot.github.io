@@ -506,7 +506,7 @@ function listsearch(dicdata) {
       // 搜索并添加到列表
       if (search_str.match(searchword)) {
         var getnum = parseInt($(searchwordarr[i].parentNode.parentNode).attr("data-ser"));
-        var liststr = '<a class="listlink login-link" data-list="' + getnum + '">' + dicdata[getnum].title + '</a>';
+        var liststr = '<a class="listlink login-link" data-list="' + getnum + '">' + dicdata[getnum].title + '　' + dicdata[getnum].summary + '</a>';
         $('.searchlist').append(liststr);
       }
     }
@@ -530,7 +530,7 @@ function listsearch(dicdata) {
       // 搜索并添加到列表
       if (search_str.match(searchword)) {
         var getnum = parseInt($(searchwordarr[i].parentNode.parentNode).attr("data-ser"));
-        var liststr = '<a class="listlink login-link" data-list="' + getnum + '">' + dicdata[getnum].title + '</a>';
+        var liststr = '<a class="listlink login-link" data-list="' + getnum + '">' + dicdata[getnum].title + '　' + dicdata[getnum].summary + '</a>';
         $('.searchlist').append(liststr);
       }
     }
@@ -548,32 +548,13 @@ function listsearch(dicdata) {
     })
     searchlock = false;
   }else{                            //按音讀搜索
-    for (var i = 5; i < dicdata.length-1; i++) {
-      // 分离数据
-      var word_normal = dicdata[i].content.split("[常用漢字表内音讀] </b>")[1];
-      if (word_normal != undefined) {
-        word_normal = word_normal.split("<br>")[0];
-      }else {
-        word_normal = '';
-      }
-      var word_insheet = dicdata[i].content.split("[常用漢字表外音讀] </b>")[1];
-      if (word_insheet != undefined) {
-        word_insheet = word_insheet.split("<br>")[0];
-      }else {
-        word_insheet = '';
-      }
-      var word_offsheet = dicdata[i].content.split("[表外漢字] </b>")[1];
-      if (word_offsheet == undefined) {
-        word_offsheet = '';
-      }
-      // console.log('word_normal:' + word_normal);
-      // console.log('word_insheet:' + word_insheet);
-      // console.log('word_offsheet:' + word_offsheet);
-      // console.log('');
+    var searchwordarr = $('.heresearch');
+    for (var i = 0; i < searchwordarr.length; i++) {
+      var search_str = searchwordarr[i].innerHTML;
       // 搜索并添加到列表
-      // console.log(word_offsheet);
-      if (word_normal.match(searchword) || word_insheet.match(searchword) || word_offsheet.match(searchword)) {
-        var liststr = '<a class="listlink login-link" data-list="' + i + '">' + dicdata[i].title + '</a>';
+      if (search_str.match(searchword)) {
+        var getnum = parseInt($(searchwordarr[i].parentNode.parentNode).attr("data-ser"));
+        var liststr = '<a class="listlink login-link" data-list="' + getnum + '">' + dicdata[getnum].title + '　' + dicdata[getnum].summary + '</a>';
         $('.searchlist').append(liststr);
       }
     }
