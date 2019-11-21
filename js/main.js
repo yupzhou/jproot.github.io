@@ -356,7 +356,6 @@ $(".searchinput").keydown(function (e) {
       }
     }
 });
-
 // 搜索函数
 function searchup(dicdata) {
   searchlock = true;

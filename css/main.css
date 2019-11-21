@@ -345,8 +345,11 @@ font-size: large;
 	.listsearchbox, .indexbox{
 		visibility: hidden;
 	}
-	h4.headtitle, div.roottitle, span.rootsummary, div.rootcontent{
+	h4.headtitle, div.roottitle, span.rootsummary{
 		font-size:18px;
+	}
+	div.rootcontent{
+		font-size:16px;
 	}
 	h2.index-title{
 		font-size:35px;
@@ -355,10 +358,37 @@ font-size: large;
 		background-image: url('../src/girl.png');
 	}
 	img{
-		width: 50px;
+		width: 60px;
 	}
 	.searchbar>p{
-		font-size: 13px;
+		font-size: 15px;
 	}
-
+	div.input-group{
+		width:90vw; margin:0 auto;
+	}
+	div.navbar-header, .navbar-form{
+		background-color: #F869A6;
+	}
+	.phone{
+		background-color: #F869A6;
+		color: #fff;
+	}
+	.phone>span{
+		display: inline-block;
+		height:30px;
+	}
+	span.active{
+		background-color: #1abc9c;
+	}
+	.navb{
+		color: #fff;
+	}
+	.navbar-inverse{
+		background-color: #F869A6;
+		color: #F869A6;
+	}
+	.navbar-inverse .navbar-form {
+	    border-color: #F869A6;
+	    border-width: 0 0;
+	}
 } 

@@ -17,19 +17,19 @@
   <div class="box2">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-5">
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-5">
           <span class="sr-only">Toggle navigation</span>
-        </button>
-        <a class="navbar-brand" href="./index.html"><span class="fui-radio-checked"></span> 日语音训查询</a>
+        </button> -->
+        <a class="navbar-brand" href="./index.html"><span class="fui-radio-checked"></span> 日语音训查询</a><br>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse-5">
         <ul class="nav navbar-nav">
-          <li class="searchmethod active" data-mod="rootmode"><a href="javascript:void(0);">训读词根</a></li>
-          <li class="searchmethod" data-mod="affixmode"><a href="javascript:void(0);">训读词缀</a></li>
-          <li class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);">广韵音读</a></li>
-          <li class="searchmethod" data-mod="othermode"><a href="javascript:void(0);">日语の道</a></li>
-		  <li class="searchmethod" data-mod="diamode"><a href="javascript:void(0);">方音异调</a></li>
-          <li class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);">使用帮助</a></li>
+          <li class="searchmethod active" data-mod="rootmode"><a href="javascript:void(0);"><sup>训读</sup>词根</a></li>
+          <li class="searchmethod" data-mod="affixmode"><a href="javascript:void(0);"><sup>训读</sup>词缀</a></li>
+          <li class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);"><sup>广韵</sup>音读</a></li>
+          <li class="searchmethod" data-mod="othermode"><a href="javascript:void(0);">日语<sub>の</sub>道</a></li>
+		  <li class="searchmethod" data-mod="diamode"><a href="javascript:void(0);">方音<sub>と</sub>异调</a></li>
+          <li class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);"><sup>使</sup><sub>用</sub>帮助</a></li>
         </ul>
           <div class="navbar-form navbar-left" action="#" role="search" href="javascript:void(0);">
             <div class="form-group">
@@ -42,6 +42,25 @@
             </div>
           </div>
         </div>
+		<div class="phone hidden-sm hidden-md hidden-lg">
+			  <span class="searchmethod active" data-mod="rootmode"><a href="javascript:void(0);"><b class="navb">　<sup>训读</sup>词根　</b></a></span>
+			  <span class="searchmethod" data-mod="affixmode"><a href="javascript:void(0);"><b class="navb">　<sup>训读</sup>词缀</b>　</a></span>
+			  <span class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);"><b class="navb">　<sup>广韵</sup>音读</b>　</a></span>
+			  <span class="searchmethod" data-mod="othermode"><a href="javascript:void(0);"><b class="navb">　日语<sub>の</sub>道</b>　</a></span>
+			  <span class="searchmethod" data-mod="diamode"><a href="javascript:void(0);"><b class="navb">　方音<sub>と</sub>异调</b>　</a></span>
+			  <span class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);"><b class="navb">　<sup>使</sup><sub>用</sub>帮助</b>　</a></span>	
+		<div class="navbar-form" action="#" role="search" href="javascript:void(0);" style="text-align: center; ">
+		  <div class="form-group">
+		    <div class="input-group" id="dicsearch"  style="width:90vw; margin:0 auto;">
+		      <input class="form-control searchinput" type="search" placeholder="Search..." />
+		      <span class="input-group-btn" style="width:37px;">
+		        <button type="btn" class="btn" id="searchbtn"><span class="fui-search"></span></button>
+		      </span>
+		    </div>
+		  </div>
+		</div>  
+		</div>
+		
     </nav>
     <!-- 主体 -->
     <div class="articlebox">
