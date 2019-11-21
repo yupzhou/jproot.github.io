@@ -397,7 +397,10 @@ background-color: #fff;
 	    border-color: #F869A6;
 	    border-width: 0 0;
 	}
-	.col-md-4{
-		padding-right: 30px;
+    .mbl{
+    margin-bottom: 10px;
+    }
+	.select.form-control, .select.select2-search input[type=text] {
+	    min-width: 30vw;
 	}
 } 
