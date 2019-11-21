@@ -366,7 +366,7 @@ font-size: large;
 	.searchbar>p{
 		font-size: 15px;
 	}
-	div.input-group{
+	div.phone>.input-group{
 		width:90vw; margin:0 auto;
 	}
 	div.navbar-header, .navbar-form{
@@ -393,5 +393,9 @@ font-size: large;
 	.navbar-inverse .navbar-form {
 	    border-color: #F869A6;
 	    border-width: 0 0;
+	}
+	.select2-choice{
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 } 
