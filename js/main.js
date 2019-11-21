@@ -60,6 +60,7 @@ $(".searchmethod").click(function() {
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(worddata);
+	$('.searchinput2').attr('placeholder','汉字查询');
     $('.searchlist').empty();
     $('.searchinput2')[0].value = '';
     $('.listsearchbox').show();

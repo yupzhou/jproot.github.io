@@ -6,6 +6,11 @@ font-family: "times new roman", H-云林黑体, 微软雅黑; /**/
 ::-webkit-scrollbar {
 /*display: none;隐藏滚轮 */
 }
+
+.form-control, .select2-search input[type=text] {
+font-family: "times new roman", H-云林黑体, 微软雅黑; 
+}
+
 .bg1{
     width: 100vw;
     height: 100vh;
@@ -392,6 +397,7 @@ background-color: #fff;
 	.navbar-inverse{
 		background-color: #F869A6;
 		color: #F869A6;
+		height: 110px;
 	}
 	.navbar-inverse .navbar-form {
 	    border-color: #F869A6;
