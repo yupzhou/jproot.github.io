@@ -61,9 +61,6 @@ z-index:2;
   top: 32vh;
   position: relative;
 }
-.selectbox{
-  /* padding-right: 100px; */
-}
 .searchmode{
   width: 100%;
 }
@@ -330,7 +327,9 @@ background-color: #fff;
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #1abc9c;
-font-size: large;
+    font-size: large;
+	padding-bottom: 13px;
+	border-bottom: 3px solid #fff;
 }
 
 .login-link {
@@ -378,10 +377,14 @@ font-size: large;
 	}
 	.phone>span{
 		display: inline-block;
-		height:30px;
+		height:35px;
+		width:13vw;
 	}
 	span.active{
 		background-color: #1abc9c;
+		padding-bottom: 8px;
+		border-bottom: 2px solid #fff;
+		font-size: 19px;
 	}
 	.navb{
 		color: #fff;
@@ -394,8 +397,7 @@ font-size: large;
 	    border-color: #F869A6;
 	    border-width: 0 0;
 	}
-	.select2-choice{
+	.col-md-4{
 		padding-right: 15px;
-		padding-left: 15px;
 	}
 } 
