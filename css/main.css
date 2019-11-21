@@ -357,8 +357,11 @@ font-size: large;
 	.box{
 		background-image: url('../src/girl.png');
 	}
+	.ttb{
+		font-size: 17px;
+	}
 	img{
-		width: 60px;
+		width: 70px;
 	}
 	.searchbar>p{
 		font-size: 15px;
