@@ -341,7 +341,7 @@ background-color: #fff;
 		width: 100vw;
 		left:0px;
 	}
-	.listsearchbox, .indexbox{
+	.listsearchbox, .indexbox, .waifu{
 		visibility: hidden;
 	}
 	h4.headtitle, div.roottitle, span.rootsummary{
