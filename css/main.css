@@ -357,7 +357,7 @@ background-color: #fff;
 		background-image: url('../src/girl.png');
 	}
 	.ttb{
-		font-size: 17px;
+		font-size: 15px;
 	}
 	img{
 		width: 70px;
@@ -377,8 +377,8 @@ background-color: #fff;
 	}
 	.phone>span{
 		display: inline-block;
-		height:35px;
-		width:13vw;
+		height:30px;
+		/*width:8vw;*/
 	}
 	span.active{
 		background-color: #1abc9c;
@@ -398,6 +398,6 @@ background-color: #fff;
 	    border-width: 0 0;
 	}
 	.col-md-4{
-		padding-right: 15px;
+		padding-right: 30px;
 	}
 } 
