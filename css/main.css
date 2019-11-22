@@ -418,6 +418,9 @@ background-color: #fff;
 		color:#F869A6;
 		vertical-align: middle;
 		/*text-decoration: underline;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.listsearchbox{
 	  width:90vw;
