@@ -417,6 +417,7 @@ background-color: #fff;
 		font-size:15px;
 		color:#F869A6;
 		vertical-align: middle;
+		/*text-decoration: underline;*/
 	}
 	.listsearchbox{
 	  width:90vw;
@@ -452,3 +453,6 @@ a#lite{
 	color:#fff;
 }
 
+div.rootcontent{
+		border-top:1px solid;
+	}

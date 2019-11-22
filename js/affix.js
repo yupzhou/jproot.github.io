@@ -25,5 +25,23 @@ var affixdata =  [
         "class": "2",
         "summary": "1",
         "content": "<span class='heresearch'>イ</span>"
-      },	  
+      },	
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },			
   ];

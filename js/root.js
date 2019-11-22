@@ -24,7 +24,7 @@ var rootdata =  [
         "title": "イ",
         "class": "2",
         "summary": "i　鋳",
-        "content": "<br><b>i-r-u</b>\
+        "content": "<b>i-r-u</b>\
 		<span class='heresearch'><b>イル</b></span>\
 		<b><sup>EMJ</sup> vt 鋳</b><br>\
 		　　铸造。<br>\
@@ -35,7 +35,7 @@ var rootdata =  [
 		    "title": "イ",
 		    "class": "2",
 		    "summary": "i　胆",
-		    "content": "<br><b>i</b>\
+		    "content": "<b>i</b>\
 		<span class='heresearch'><b>イ</b></span>\
 		<b><sup>EMJ</sup> vt 胆</b><br>\
 		　　胆囊。<br>\
@@ -45,7 +45,7 @@ var rootdata =  [
 		    "title": "イカ",
 		    "class": "2",
 		    "summary": "ika　紙鳶",
-		    "content": "<br><b>ika</b>\
+		    "content": "<b>ika</b>\
 		<span class='heresearch'><b>イカ</b></span>\
 		<b><sup>EMnJ</sup> n 紙鳶</b><br>\
 		　　风筝。<br>\
@@ -125,9 +125,24 @@ var rootdata =  [
 			
 			
 			
-			
-			
-			
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
 			
 			
   ];

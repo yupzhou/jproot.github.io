@@ -2646,5 +2646,22 @@ var worddata= [
 "summary":"→オ類",
 "content":""
 },
-
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },				
+		{
+		    "title": " ",
+		    "class": "48",
+		    "summary": " ",
+		    "content": " "
+		  },
   ];
