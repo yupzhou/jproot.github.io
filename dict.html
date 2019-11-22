@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/flat-ui.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
 <link rel="icon" type="image/png" href="src/icon.png"/>
     <title>日语音训查询</title>
     <script src="js/statis.js"></script>
@@ -48,8 +48,19 @@
 			  <span class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);"><b class="navb">　音</b>　</a></span>
 			  <span class="searchmethod" data-mod="othermode"><a href="javascript:void(0);"><b class="navb">　史</b>　</a></span>
 			  <span class="searchmethod" data-mod="diamode"><a href="javascript:void(0);"><b class="navb">　方</b>　</a></span>
-			  <span class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);"><b class="navb">　助</b>　</a></span>	
-		<div class="navbar-form" action="#" role="search" href="javascript:void(0);" style="text-align: center; ">
+			  <span class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);"><b class="navb">　助</b>　</a></span>	<p></p>
+			  <div class="listsearchbox">
+			    <div class="input-group">
+			      <input type="text" class="form-control searchinput2" type="search" placeholder="输入假名以查询"/>
+			      <span class="input-group-btn"> 
+			        <button type="btn" class="btn" id="searchbtn2"><span class="fui-search"></span></button>
+			      </span>
+			    </div>
+			    <div class="searchlist">
+			  
+			    </div>
+			  </div>
+		<!--<div class="navbar-form" action="#" role="search" href="javascript:void(0);" style="text-align: center; ">
 		  <div class="form-group">
 		    <div class="input-group" id="dicsearch"  style="width:90vw; margin:0 auto;">
 		      <input class="form-control searchinput" type="search" placeholder="Search..." />
@@ -58,7 +69,10 @@
 		      </span>
 		    </div>
 		  </div>
-		</div>  
+		</div>  -->	
+		<div class="minst">
+			<p>我有嘉宾，鼓瑟吹笙。<br><br></p>
+		</div>
 		</div>
 		
     </nav>
@@ -347,7 +361,7 @@
                         <div class="rootbox">
                             <div class="roottitle">关于本站<span class="arrow"></span></div>
                             <div class="rootcontent" style="display:none;"></br><b>站长　</b>"Na²si (Nanasi)" Yupzhou<br>
-              			  <b>网页框架制作　</b>Edgelight</div>
+              			  <b>网页框架制作　</b>Edgelight <img src='src/logoEL.png' /></div>
                         </div>
               
               	   <div class="rootbox">
@@ -367,14 +381,15 @@
               				  <b>[2019-11-05]　</b>2.0版本部署github<br>
               				  <b>[2019-11-06]　</b>修改css<br>
               				  <b>[2019-11-08]　</b>2.1版本<br>
-							  <b>[2019-11-21]　</b>修改css、2.2版本<br>
-				<b>[2019-11-09]　</b>增设方言·音调页<br>
-				<b>[2019-11-17]　</b>站长统计<br>
+							<b>[2019-11-09]　</b>增设方言·音调页<br>
+							<b>[2019-11-17]　</b>站长统计<br>
+							<b>[2019-11-21]　</b>2.2版本，修改css、增加轻量版<br>
+							<b>[2019-11-22]　</b>2.3版本，修改css、增加轻量版入口<br>
 							  </div>
                         </div>
            </div>
     
-    <br><p class="ttb">© 2018-2019 "Na²si (Nanasi)" Yupzhou, Edgelight "JPRootProj."</p><br><img src='src/logoNNS.png' /><br><b>×</b><br><img src='src/logoEL.png' /><br><br><br><br><br><br>
+    <br><p class="ttb">© 2018-2019 "Na²si (Nanasi)" Yupzhou "JPRootProj."</p><br><img src='src/logoNNS.png' /><br><br><br><br><br><br><br>
     
         </div>
     
@@ -436,7 +451,8 @@
     <a class="btn btn-primary btn-large btn-block" href="javascript:void(0);" id="indexbtn">收起</a>
   </div>
 
-  <div class="listsearchbox">
+
+  <div class="listsearchbox hidden-xs hidden-sm">
     <div class="input-group">
       <input type="text" class="form-control searchinput2" type="search" placeholder="训读或汉字查询"/>
       <span class="input-group-btn" style="width:37px;">
@@ -448,7 +464,6 @@
     </div>
   </div>
 
-  
  <script src="assets/jquery.min.js"></script>
  <!-- <script src="assets/jquery-ui.min.js"></script>-->
   <!-- <div id="backTop">	</div> -->
@@ -486,8 +501,6 @@
         /* 在 initModel 前添加 */
         initModel("assets/waifu-tips.json")
     </script>
-  
-
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/flat-ui.min.js"></script>

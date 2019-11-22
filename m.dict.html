@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=Edge">  -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flat-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="icon" type="image/png" href="src/icon.png"/>
+    <title>日语音训查询 Lite</title>
+    <script src="js/statis.js"></script>
+</head>
+
+<body>
+  <div class="box2">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-5">
+          <span class="sr-only">Toggle navigation</span>
+        </button> -->
+        <a class="navbar-brand" href="./index.html"><span class="fui-radio-checked"></span> 日语音训查询 Lite</a><br>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-5">
+        <ul class="nav navbar-nav">
+          <li class="searchmethod active" data-mod="rootmode"><a href="javascript:void(0);"><sup>训读</sup>词根</a></li>
+          <li class="searchmethod" data-mod="affixmode"><a href="javascript:void(0);"><sup>训读</sup>词缀</a></li>
+          <li class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);"><sup>广韵</sup>音读</a></li>
+          <li class="searchmethod" data-mod="othermode"><a href="javascript:void(0);">日语<sub>の</sub>道</a></li>
+		  <li class="searchmethod" data-mod="diamode"><a href="javascript:void(0);">方音<sub>と</sub>异调</a></li>
+          <li class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);"><sup>使</sup><sub>用</sub>帮助</a></li>
+        </ul>
+          <div class="navbar-form navbar-left" action="#" role="search" href="javascript:void(0);">
+            <div class="form-group">
+              <div class="input-group" id="dicsearch"  style="width:200px;">
+                <input class="form-control searchinput" type="search" placeholder="Search..." />
+                <span class="input-group-btn" style="width:37px;">
+                  <button type="btn" class="btn" id="searchbtn"><span class="fui-search"></span></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="phone hidden-sm hidden-md hidden-lg">
+			  <span class="searchmethod active" data-mod="rootmode"><a href="javascript:void(0);"><b class="navb">　根　</b></a></span>
+			  <span class="searchmethod" data-mod="affixmode"><a href="javascript:void(0);"><b class="navb">　缀</b>　</a></span>
+			  <span class="searchmethod" data-mod="wordmode"><a href="javascript:void(0);"><b class="navb">　音</b>　</a></span>
+			  <span class="searchmethod" data-mod="othermode"><a href="javascript:void(0);"><b class="navb">　史</b>　</a></span>
+			  <span class="searchmethod" data-mod="diamode"><a href="javascript:void(0);"><b class="navb">　方</b>　</a></span>
+			  <span class="searchmethod" data-mod="helpmode"><a href="javascript:void(0);"><b class="navb">　助</b>　</a></span>	<p></p>
+			  <div class="listsearchbox">
+			    <div class="input-group">
+			      <input type="text" class="form-control searchinput2" type="search" placeholder="输入假名以查询"/>
+			      <span class="input-group-btn"> 
+			        <button type="btn" class="btn" id="searchbtn2"><span class="fui-search"></span></button>
+			      </span>
+			    </div>
+			    <div class="searchlist">
+			  
+			    </div>
+			  </div>
+		<!--<div class="navbar-form" action="#" role="search" href="javascript:void(0);" style="text-align: center; ">
+		  <div class="form-group">
+		    <div class="input-group" id="dicsearch"  style="width:90vw; margin:0 auto;">
+		      <input class="form-control searchinput" type="search" placeholder="Search..." />
+		      <span class="input-group-btn" style="width:37px;">
+		        <button type="btn" class="btn" id="searchbtn"><span class="fui-search"></span></button>
+		      </span>
+		    </div>
+		  </div>
+		</div>  -->	
+		<div class="minst">
+			<p>我有嘉宾，鼓瑟吹笙。<br><br></p>
+		</div>
+		</div>
+		
+    </nav>
+    <!-- 主体 -->
+    <div class="articlebox">
+		<br><br><br><br>
+    </div>
+
+        <!-- 附录 -->
+        <div class="otherbox" style="display:none">
+          <div class="headclass" id="node1">
+              <h4 class="headtitle">▶ 日本祖语</h4>
+              <div class="headline"></div>
+              <div class="rootbox">
+                  <div class="roottitle">日本语族<span class="arrow"></span></div>
+                  <div class="rootcontent" style="display:none;"><br>　　日语到底属于哪个语系尚未有定论。<br>
+　　一般认为日语在很大程度上受到<b>南岛语</b>影响（包括词汇和语法：重叠、接辞）；<b>虾夷语（Ainu语）</b>被认为属于南岛语，与日语存在相互借用关系，许多本州地名可能要用虾夷语解释。<br>
+　　S. Starostin等倡导的<b>阿尔泰语系</b>说，基于日语的一些特征：元音和谐、黏着语，日语与通古斯-满语族、蒙古语族、突厥语族、朝鲜语共同构成阿尔泰语系。由于日语存在高低重音系统，阿尔泰祖语被认为是音调语言。阿尔泰语系假说解释了日语词根浊化的原因（清塞音的浊化的本质是前置鼻音化 [仍见于琉球语，此观点是学术界的共识，这样相当于承认日语不存在纯粹的浊塞音]、元音带高音调导致辅音前置鼻音化、辅音前的响音将辅音前置鼻音化）。由于通古斯-满语、蒙古语、突厥语之间存在广泛的词汇借入，学术界常将「阿尔泰语系」视为东北亚语言联盟（Sprachbund）。虽然S. Starostin认为存在不宜用「借用」解释的问题（借入时期前后对应词汇的语音对应、存在突厥语和通古斯-满语中有对应而蒙古语中无对应的词汇），阿尔泰语系仍不广为接受。<br>
+　　后来的研究中，学者们趋向认同<b>日朝同源</b>。日朝同源是阿尔泰语系的下位假说。日语与朝鲜语的相似之处，不仅在于同有元音和谐（虽然都已经消失了）、同为黏着语，还有固有词的词首不出现浊塞音、固有词的词首不出现流音（这就是流音法则），许多词汇能找到可能的对应。学者们通过对琉球祖语的构拟、上代东国方言的研究，将日本祖语的单元音增加到6个：*i, *e, *a, *o, *u, *ə，其中*e, *o是通过构拟琉球祖语得到的与*i, *u对应的中元音，为了解决一些琉球语的辅音变化（由于各琉球语对同一词汇的反映不同，其构拟存在一定难度，*e, *o的构拟不大必要）和上代东国方言的元音交替和问题（实际上*e可用ia/ai代替，*o可用ua代替，具体详见词汇表）。又根据双元音*ə-i的两种变形（> i / e）提出*ə有两种，变成i的记作*ɨ，变成e的记作*ə。这样日本祖语的单元音就有7个：*i, *e, *a, *o, *u, *ɨ, *ə。提倡日朝同源假说的学者以A. Vovin, J. Whitman, J. Unger为代表。<br>
+　　现在日本语族（也称日琉语族）的下位分类为：<br>
+　　1)	岛屿日本语<br>
+　　　　a)	中央日本语<br>
+　　　　　　i.	上代西部日本语（WOJ）<br>
+　　　　b)	上代东部日本语（上代东国方言）<br>
+　　　　　　i.	上代远江=骏河日本语（TSOJ）<br>
+　　　　　　ii.	上代中部日本语（COJ）<br>
+　　　　　　iii.	真上代东部日本语（EOJ）<br>
+　　2)	琉球语<br>
+　　3)	半岛日本语<br>
+　　　　高句丽、新罗、伽罗、百济、济州岛
+</div>
+              </div>
+			  
+			  <div class="rootbox">
+			                <div class="roottitle">日本音系<span class="arrow"></span></div>
+			                <div class="rootcontent" style="display:none;">
+			  				  <br><b>辅音</b><br>*k, *s, *t, *n, *p, *m, *j, *r, *w。<br><b>元音</b><br>1)　单元音：*a; *ə > o2; *i > i1; *u。<br>2)　双元音：*ui, *əi > i2; *ai, *əi > e2; *ia, *iə > e1; *au, *ua > o1。<br>3)　方便起见，ə统一写成o。
+			      </div>
+			  </div>
+			  
+           </div>
+    
+         <div class="headclass" id="node2">
+             <h4 class="headtitle">▶ 时代分期</h4>
+             <div class="headline"></div>
+             <div class="rootbox">
+                 <div class="roottitle">历史年代分期<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;"><br>
+      <b>旧石器时代</b>　　– 前14000年左右<br>
+<b>绳文时代</b>　　前14000年左右 – 前10世纪<br>
+<b>弥生时代</b>　　前4世纪 – 后3世纪中叶<br>　　徐福东渡传说、倭奴朝贡汉朝、汉字传来<br>
+<b>古坟时代</b>　　3世纪中叶 – 7世纪左右<br>　　古坟盛行、邪马台国、倭国大乱、朝鲜征伐传说、倭王、佛教<br>
+<b>飞鸟时代</b>　　592年 – 710年<br>　　遣隋唐使、大化革新、白江口之役、壬申之乱、大宝律令、日本<br>
+<b>奈良时代</b>　　710年 – 794年<br>　　皇位争夺<br>
+<b>平安时代</b>　　794年 – 1185年<br>　　摄关政治、院政期、武家、庄园、源平合战<br>
+<b>镰仓时代</b>　　1185年 – 1336年<br>　　镰仓幕府、得宗专制、元朝侵略日本、元弘之乱、建武新政<br>
+<b>室町时代</b>　　1336年 – 1573年<br>　　倭寇<br>
+<b>战国时代</b>　　1467年（1493年）– 1590年<br>　　遣明使、应仁之乱、下克上、基督教<br>
+<b>安土桃山时代</b>　　1573年 – 1603年<br>　　本能寺之变、丰臣秀吉统一日本、万历朝鲜战争、关原之战<br>
+<b>江户时代</b>　　1603年 – 1868年<br>　　大坂之阵、岛原之乱、元禄文化、经济改革、藩政改革、开拓虾夷、黑船来航、炮击鹿儿岛、戊辰战争、大政奉还、明治维新</td>
+<b>明治时代</b>　　1868年 – 1912年<br>　　西南战争、台湾出兵、吞并琉球、甲午战争、日俄战争、日韩合并<br>
+<b>大正时代</b>　　1912年 – 1926年<br>　　政党、一战、青岛战役、米骚动、经济危机<br>
+<b>昭和时代</b>　　1926年 – 1989年<br>　　日治台湾、九一八事变、二二六事件、卢沟桥事变、抗日战争、二战、太平洋战争、波茨坦宣言、盟军占领、东京审判、旧金山和约、中日建交<br>
+<b>平成时代</b>　　1989年 – 2019年<br>　　钓鱼岛争端、东日本大震灾<br>
+<b>令和时代</b>　　2019年 –<br></div>
+             </div>
+             <div class="rootbox">
+                 <div class="roottitle">日语分期<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;"><br>
+
+ <b>邪马台语</b>　　3世纪<br>　- 三国魏《魏志·倭人传》<br>
+ <b>上代日语</b>　　6 – 9世纪<br>　　6世纪末，飞鸟时代初，大陆移民将汉文化和佛教传入日本列岛。白江口之战后，7世纪初，出现了以汉字写成的史书和诗歌集。<br>　- 《日本书纪》《古事记》《万叶集》<br>
+ <b>中古日语</b>　　9 – 11世纪<br>　　9世纪中期停止派遣遣唐使后，日本形成了「国风文化」，出现了假名、和汉混淆文。<br>　- 《竹取物语》《伊势物语》《土佐日记》《枕草子》《更级日记》《源氏物语》<br>
+ <b>中世日语</b>　　12 – 17世纪<br>　　12世纪末，日本逐渐进入武士阶级的封建社会，中世初期，政治中心从京都转移到关东（镰仓幕府），中央语（上方语）受到了关东于的影响。16世纪后半，葡国传教士上陆，将西洋文化传入日本。<br>　- 《平家物语》《徒然草》<br>
+ <b>近世日语</b>　　17 – 19世纪<br>　　17世初，日本的政治中心从「上方」京都·大阪转移到江户，从此影响力最大的方言由上方语（今近畿方言）变成江户语（今山手话·京都方言）。<br>　- 新文化艺术（浮世绘、净琉璃、歌舞伎、文乐、落语、俳谐）<br>　- 
+大众文学（洒落本、滑稽本、人情本、草双纸，总称「戏作」或「（江户）地本」）<br>
+ <b>现代日语</b>　　19世纪 –<br>　　幕末维新后日本步入现代化进程，语言也进入现代日语阶段。<br></div>
+             </div>
+             
+
+          </div>
+    
+    	  <div class="headclass" id="node3">
+              <h4 class="headtitle">▶ 文字简史</h4>
+    		  <div class="headline"></div>
+    		  <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;"><img src='' style="width: 49.58vw; height: 16.15vw; max-width: 952px; max-height: 310px;"/></div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;"></div>
+             </div>
+    	</div>
+    
+    	<div class="headclass" id="node4">
+              <h4 class="headtitle">▶ 语音简史</h4>
+    		  <div class="headline"></div>
+    		  <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    	</div>
+
+    	<div class="headclass" id="node5">
+              <h4 class="headtitle">▶ 语法简史</h4>
+    		  <div class="headline"></div>
+    		  <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    	</div>
+
+    	<div class="headclass" id="node6">
+              <h4 class="headtitle">▶ 词汇简史</h4>
+    		  <div class="headline"></div>
+    		  <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    	</div>
+
+    	<div class="headclass" id="node7">
+              <h4 class="headtitle">▶ 文体简史</h4>
+    		  <div class="headline"></div>
+    		  <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    		 <div class="rootbox">
+                 <div class="roottitle">1<span class="arrow"></span></div>
+                 <div class="rootcontent" style="display:none;">blablablablablab<br/>lablablablablablabla</div>
+             </div>
+    	</div>
+    <br><br><br><br><br><br>
+        </div>
+        
+		<!-- 方言·音调 -->
+		    <div class="diabox" style="display:none">
+		      <div class="headclass" id="node1">
+		          <h4 class="headtitle">▶ 本页解说</h4>
+		          <div class="headline"></div>
+		          <div class="rootbox">
+		              <div class="roottitle">方言<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</div>
+		          </div>
+		          <div class="rootbox">
+		              <div class="roottitle">音调<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</div>
+		          </div>
+		          
+		       </div>
+
+<div class="headclass" id="node2">
+		          <h4 class="headtitle">▶ 上代东国方言</h4>
+		          <div class="headline"></div>
+		          <div class="rootbox">
+		              <div class="roottitle">1<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</div>
+		          </div>
+		          <div class="rootbox">
+		              <div class="roottitle">1<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</div>
+		          </div>
+		          
+		       </div>
+
+<div class="headclass" id="node3">
+		          <h4 class="headtitle">▶ 本土方言</h4>
+		          <div class="headline"></div>
+		          <div class="rootbox">
+		              <div class="roottitle">1<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</div>
+		          </div>
+		          <div class="rootbox">
+		              <div class="roottitle">1<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</a></div>
+		          </div>
+		          
+		       </div>
+
+<div class="headclass" id="node4">
+		          <h4 class="headtitle">▶ 琉球方言</h4>
+		          <div class="headline"></div>
+		          <div class="rootbox">
+		              <div class="roottitle">1<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</div>
+		          </div>
+		          <div class="rootbox">
+		              <div class="roottitle">1<span class="arrow"></span></div>
+		              <div class="rootcontent" style="display:none;">1</a></div>
+		          </div>
+		          
+		       </div>
+
+<br><br><br><br><br><br>
+		    </div>
+		
+		<!-- 關於 -->
+        <div class="helpbox" style="display:none">
+          <div class="headclass" id="node1">
+              <h4 class="headtitle">▶ 使用帮助</h4>
+              <div class="headline"></div>
+              <div class="rootbox">
+              		      <div class="roottitle">包含内容<span class="arrow"></span></div>
+              		      <div class="rootcontent" style="display:none;"></br>
+              			  <ul><li>以词根为中心的派生词汇表</li>
+              <li>列出各词缀的功能</li>
+              <li>将日本汉字音按《广韵》分类</li>
+              <li>日语简史</li></ul>
+              			  </div>
+              		  </div>
+              		  
+              		  <div class="rootbox">
+              		  		      <div class="roottitle">查询功能<span class="arrow"></span></div>
+              		  		      <div class="rootcontent" style="display:none;"></br>
+              		  			  <ul><li>首页支持假名、汉字</li>
+              		  <li>训读页、词缀页功能栏、右侧搜索栏支持假名</li>
+              		  <li>音读页功能栏、右侧搜索栏支持支持汉字</li>
+              		  <li>平假名、片假名转换支持</li></ul>
+              		  			  </div>
+              		  		  </div>
+              		  
+                        <div class="rootbox">
+                            <div class="roottitle">罗马字<span class="arrow"></span></div>
+                            <div class="rootcontent" style="display:none;"></br><b>祖语词根罗马字</b>
+              			  <ul><li>浊塞音统一写成前置鼻音化的清塞音的形式</li><li>祖语单元音为a, i, u, o，双元音为ai, ia, oi, io > e; ui, oi > i; ua, au > o，不明确或不区分的e, i, o，直接写成e, i, o</li></ul>
+              			  <b>音读罗马字</b><ul><li>浊塞音统一写成浊音</li><li>元音为a, i, u, e, o五种</li></ul>
+              			  </div>
+                        </div>
+              		  
+              		  <div class="rootbox">
+              		      <div class="roottitle">参照<span class="arrow"></span></div>
+              		      <div class="rootcontent" style="display:none;"></br>
+              			  <b>日本祖语的构拟　</b>2003 S. A. Starostin, A. V. Dybo, O. A. Mudrak (with the assistance of I. Gruntov and V. Glumov) An Etymological Dictionary of Altaic Languages<br>
+              			  <b>日语词典　</b>类聚名義抄、岩波書店广辞苑第六版、小学馆中日词典<br>
+              			  <b>琉球方言　</b>1999-2003 Okinawa Center of Language Study <a href='http://ryukyu-lang.lib.u-ryukyu.ac.jp/index.html' target='_blank'>琉球語音声データベース</a><br>
+              			  <b>语系对比　</b>1998-2005 Sergei Starostin, 2006-2013 George Starostin <a href='http://starling.rinet.ru/' target='_blank'>The Tower of Babel</a><br>
+              			  <b>上古汉语　</b>2014 William H. Baxter and Laurent Sagart <a href='http://ocbaxtersagart.lsait.lsa.umich.edu/' target='_blank'>The Baxter-Sagart reconstruction of Old Chinese (Version 1.1, 20 September 2014)</a><br>
+              			  <b>广韵　</b>2014 poem <a href='https://zhuanlan.zhihu.com/p/19853944' target='_blank'>聲形析微表(201409)</a><br>
+              			  <b>中古汉语、日语音读　</b>2016 Maigo <a href='https://www.guokr.com/post/577961/' target='_blank'>漢字古今中外讀音查詢 V3.0 (app)</a><br>
+              			  <b>日语历史　</b><a href='https://ja.wikipedia.org/' target='_blank'>ウィキペディア</a></div>
+              		  </div>
+              		  
+              		  <div class="rootbox">
+              		      <div class="roottitle">引用<span class="arrow"></span></div>
+              			  <div class="rootcontent" style="display:none;"></br>
+              		      <b>Live2D　</b>fghrsh <a href='https://github.com/fghrsh' target='_blank'>Live2D 看板娘插件</a><br>
+              			  <b>封面　</b>WP Chun from Pixabay <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3571759' target='_blank'>Mount Fuji</a><br>
+              			  </div>
+              		  </div>
+              		  
+                        <div class="rootbox">
+                            <div class="roottitle">原著<span class="arrow"></span></div>
+                            <div class="rootcontent" style="display:none;"></br>★　本站内容基于站长原著《日语音训》<s>未写完</s>，收录了未登载于本站的丰富內容。详情请戳→<a href='src/.png' target='_blank'>站长小广告</a><s>未制作</s></div>
+                        </div>
+              		  
+                        <div class="rootbox">
+                            <div class="roottitle">关于本站<span class="arrow"></span></div>
+                            <div class="rootcontent" style="display:none;"></br><b>站长　</b>"Na²si (Nanasi)" Yupzhou<br>
+              			  <b>网页框架制作　</b>Edgelight <img src='src/logoEL.png' /></div>
+                        </div>
+              
+              	   <div class="rootbox">
+                            <div class="roottitle">更新履历<span class="arrow"></span></div>
+                            <div class="rootcontent" style="display:none;"></br>
+              				  <b>[2018-05-20]　</b>计划中<br>
+              				  <b>[2018-05-22]　</b>框架搭建、首页和功能栏搜索<br>
+              				  <b>[2018-05-23]　</b>增设附录页、关于页<br>
+              				  <b>[2018-05-24]　</b>目录<br>
+              				  <b>[2018-05-25]　</b>封面<br>
+              				  <b>[2018-05-26]　</b>侧栏假名搜索、假名转换<br>
+              				  <b>[2018-05-28]　</b>修改css<br>
+              				  <b>[2018-07-07]　</b>首页插绘<s>已替换</s><br>
+              				  <b>[2018-07-11]　</b>侧栏汉字搜索、增设词缀页、1.0版本沉睡<br>
+              				  <b>[一年<s>还多一季</s>后] </b><br>
+              				  <b>[2019-11-04]　</b>嵌入live2d<br>
+              				  <b>[2019-11-05]　</b>2.0版本部署github<br>
+              				  <b>[2019-11-06]　</b>修改css<br>
+              				  <b>[2019-11-08]　</b>2.1版本<br>
+							  <b>[2019-11-21]　</b>修改css、2.2版本<br>
+							<b>[2019-11-09]　</b>增设方言·音调页<br>
+							<b>[2019-11-17]　</b>站长统计<br>
+							<b>[2019-11-21]　</b>2.2版本，修改css、增加轻量版<br>
+							<b>[2019-11-22]　</b>2.3版本，修改css、增加轻量版入口<br>
+							  </div>
+                        </div>
+           </div>
+    
+    <br><p class="ttb">© 2018-2019 "Na²si (Nanasi)" Yupzhou, Edgelight "JPRootProj."</p><br><br><br><br><br><br><br>
+    
+        </div>
+    
+      </div>
+
+  
+  <!-- 目录 -->
+  <div class="tile dicindex">
+    <h3 class="tile-title">目录</h3>
+    <div class="indexbox">
+      <a class="indexlink login-link " data-node="node1">⚝ ア a</a>
+      <a class="indexlink login-link" data-node="node2">⚝ イ i</a>
+      <a class="indexlink login-link" data-node="node3">⚝ ウ u</a>
+      <a class="indexlink login-link" data-node="node4">⚝ エ e</a>
+      <a class="indexlink login-link" data-node="node5">⚝ オ o</a>
+      <a class="indexlink login-link" data-node="node6">⚝ カ ka</a>
+      <a class="indexlink login-link" data-node="node7">⚝ キ ki</a>
+      <a class="indexlink login-link" data-node="node8">⚝ ク ku</a>
+      <a class="indexlink login-link" data-node="node9">⚝ ケ ke</a>
+      <a class="indexlink login-link" data-node="node10">⚝ コ ko</a>
+      <a class="indexlink login-link" data-node="node11">⚝ サ sa</a>
+      <a class="indexlink login-link" data-node="node12">⚝ シ si</a>
+      <a class="indexlink login-link" data-node="node13">⚝ ス su</a>
+      <a class="indexlink login-link" data-node="node14">⚝ セ se</a>
+      <a class="indexlink login-link" data-node="node15">⚝ ソ so</a>
+      <a class="indexlink login-link" data-node="node16">⚝ タ ta</a>
+      <a class="indexlink login-link" data-node="node17">⚝ チ ti</a>
+      <a class="indexlink login-link" data-node="node18">⚝ ツ tu</a>
+      <a class="indexlink login-link" data-node="node19">⚝ テ te</a>
+      <a class="indexlink login-link" data-node="node20">⚝ ト to</a>
+      <a class="indexlink login-link" data-node="node21">⚝ ナ na</a>
+      <a class="indexlink login-link" data-node="node22">⚝ ニ ni</a>
+      <a class="indexlink login-link" data-node="node23">⚝ ヌ nu</a>
+      <a class="indexlink login-link" data-node="node24">⚝ ネ ne</a>
+      <a class="indexlink login-link" data-node="node25">⚝ ノ no</a>
+      <a class="indexlink login-link" data-node="node26">⚝ ハ pa</a>
+      <a class="indexlink login-link" data-node="node27">⚝ ヒ pi</a>
+      <a class="indexlink login-link" data-node="node28">⚝ フ pu</a>
+      <a class="indexlink login-link" data-node="node29">⚝ ヘ pe</a>
+      <a class="indexlink login-link" data-node="node30">⚝ ホ po</a>
+      <a class="indexlink login-link" data-node="node31">⚝ マ ma</a>
+      <a class="indexlink login-link" data-node="node32">⚝ ミ mi</a>
+      <a class="indexlink login-link" data-node="node33">⚝ ム mu</a>
+      <a class="indexlink login-link" data-node="node34">⚝ メ me</a>
+      <a class="indexlink login-link" data-node="node35">⚝ モ mo</a>
+      <a class="indexlink login-link" data-node="node36">⚝ ヤ ja</a>
+      <a class="indexlink login-link" data-node="node37">⚝ ユ ju</a>
+      <a class="indexlink login-link" data-node="node38">⚝ ヨ jo</a>
+      <a class="indexlink login-link" data-node="node39">⚝ ラ ra</a>
+      <a class="indexlink login-link" data-node="node40">⚝ リ ri</a>
+      <a class="indexlink login-link" data-node="node41">⚝ ル ru</a>
+      <a class="indexlink login-link" data-node="node42">⚝ レ re</a>
+      <a class="indexlink login-link" data-node="node43">⚝ ロ ro</a>
+      <a class="indexlink login-link" data-node="node44">⚝ ワ wa</a>
+      <a class="indexlink login-link" data-node="node45">⚝ ヰ wi</a>
+      <a class="indexlink login-link" data-node="node46">⚝ ヱ we</a>
+      <a class="indexlink login-link" data-node="node47">⚝ ヲ wo</a>
+    </div>
+    <a class="btn btn-primary btn-large btn-block" href="javascript:void(0);" id="indexbtn">收起</a>
+  </div>
+
+
+
+  
+ <script src="assets/jquery.min.js"></script>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flat-ui.min.js"></script>
+  <script src="js/js.cookie.js"></script>
+  <script src="js/root.js"></script>
+  <script src="js/affix.js"></script> 
+  <script src="js/word.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -240,18 +240,9 @@ z-index:2;
 	color: #FFFFFF
 }
 
-.listsearchbox{
-  width:12vw;
-  height: 50vh;
-  position: fixed;
-  bottom: 0.8vh;
-  right: 1vw;
-  overflow-y: hidden;
-  z-index:12000;
-}
 .searchlist{
-  overflow-y: hidden;
-  height: 10vh;
+  overflow-y: auto;
+  height: 15vh;
   margin-top: 5px;
 }
 .listlink{
@@ -289,6 +280,7 @@ z-index:2;
     background-color: #FF9BCD;/*#48c9b0*/
 	border-color:#FF9BCD;
 	}
+	
 .select-primary .select2-choice {
     color: #fff;
     background-color:#F869A6;/*#1abc9c*/
@@ -298,6 +290,7 @@ z-index:2;
     background-color: #F869A6;
 	box-shadow: 0em 0em 0.3em #fff;
 }
+
 .btn-primary:hover,.btn-primary.hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #FF9BCD;
@@ -346,7 +339,7 @@ background-color: #fff;
 		width: 100vw;
 		left:0px;
 	}
-	.listsearchbox, .indexbox, .waifu{
+	.indexbox, .waifu{
 		visibility: hidden;
 	}
 	h4.headtitle, div.roottitle, span.rootsummary{
@@ -383,7 +376,6 @@ background-color: #fff;
 	.phone>span{
 		display: inline-block;
 		height:30px;
-		/*width:8vw;*/
 	}
 	span.active{
 		background-color: #1abc9c;
@@ -397,16 +389,66 @@ background-color: #fff;
 	.navbar-inverse{
 		background-color: #F869A6;
 		color: #F869A6;
-		height: 110px;
+		height: 160px;
 	}
 	.navbar-inverse .navbar-form {
 	    border-color: #F869A6;
 	    border-width: 0 0;
 	}
     .mbl{
-    margin-bottom: 10px;
+		margin-bottom: 10px;
     }
 	.select.form-control, .select.select2-search input[type=text] {
 	    min-width: 30vw;
 	}
+	.minst{
+		width:90vw;
+		background-color:#fff;
+		height: 42px;
+		position: relative;
+		right: 0vw;
+		overflow-y: visible;
+		z-index:80;
+		margin:0 auto;
+		left:0;
+		border: 2px solid #F869A6;
+		box-shadow: 0em 0em 0.3em #fff;
+		border-radius: 5px;
+		font-size:15px;
+		color:#F869A6;
+		vertical-align: middle;
+	}
+	.listsearchbox{
+	  width:90vw;
+	  height: 10vh;
+	  position: fixed;
+	  right: 0vw;
+	  overflow-y: visible;
+	  z-index:100;
+	  margin:0 auto;
+	  left:0;
+	}
 } 
+
+@media screen and (min-width: 1024px){
+.listsearchbox{
+  width:12vw;
+  height: 50vh;
+  position: fixed;
+  bottom: 0.8vh;
+  right: 1vw;
+  overflow-y: hidden;
+  z-index:12000;
+}/**/
+.ttb{
+	font-size: 18px;
+}
+img{
+	width: 80px;
+}
+}
+
+a#lite{
+	color:#fff;
+}
+

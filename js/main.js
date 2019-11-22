@@ -33,7 +33,7 @@ $(".searchmethod").click(function() {
 	$('.diabox').hide();
     writedata(rootdata);
     $('.searchlist').empty();
-    $('.searchinput2').attr('placeholder','训读或汉字查询');
+    $('.searchinput2').attr('placeholder','输入假名以查询');
     $('.listsearchbox').show();
     $('.articlebox').scrollTop(0);
     $('.indexbox').scrollTop(0);
@@ -41,7 +41,7 @@ $(".searchmethod").click(function() {
     searchlock = false;
     search_mode = $(this).attr('data-mod');
     $('.articlebox').show();
-    $('.searchinput2').attr('placeholder','词缀查询');
+    $('.searchinput2').attr('placeholder','输入假名以查询');
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(affixdata);
@@ -60,7 +60,7 @@ $(".searchmethod").click(function() {
     $('.indexbox').show();
     $('.dicindex').css("visibility","visible");
     writedata(worddata);
-	$('.searchinput2').attr('placeholder','汉字查询');
+	$('.searchinput2').attr('placeholder','输入汉字以查询');
     $('.searchlist').empty();
     $('.searchinput2')[0].value = '';
     $('.listsearchbox').show();
@@ -169,6 +169,10 @@ $('#indexbtn').click(function() {
     $('.dicindex').removeClass('dicindex-close');
     indexinsopen = true;
   }
+})
+//关闭搜索列表
+$('.articlebox').click(function() {
+    $('.searchlist').empty();
 })
 
 //注册前两页展开箭头
@@ -312,7 +316,7 @@ $('#saveBtn').click(function() {
   var searchword = $(".searchinput")[0].value;
   window.localStorage.setItem("searchword",searchword);
   window.localStorage.setItem("searchmode",search_mode);
-  window.location.href = "./dictionary.html";
+  window.location.href = "./dict.html";
   
 })
 //注册首页回车
@@ -325,7 +329,7 @@ $("#search-query-3").keydown(function (e) {
       var searchword = $(".searchinput")[0].value;
       window.localStorage.setItem("searchword",searchword);
       window.localStorage.setItem("searchmode",search_mode);
-      window.location.href = "./dictionary.html";
+      window.location.href = "./dict.html";
     }
 });
 
