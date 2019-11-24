@@ -176,7 +176,7 @@ var rootdata =  [
 			<b>ko-ti </b><span class='heresearch'><b>コチ</b></span><b><sup>WOJ</sup> pron 此方</b><br>\
 			　　近处的人/物；我。<br>　　-ti 方向。<br>\
 			<b>ko-n[o-k]ata </b><span class='heresearch'><b>コナタ</b></span><b><sup>WOJ</sup> pron 此方</b><br>\
-			　　近处的人/物；这位，您，我。<br>　　-n[o-k]ata对人表示尊敬。<br>\
+			　　近处的人/物；这位，您，我。<br>　　-n[o-k]ata 对人表示尊敬。<br>\
 			<b>ko-ja-tu </b><span class='heresearch'><b>コヤツ</b></span><b><sup>EMJ</sup>, </b>\
 			<span class='heresearch'><b>クヤツ</b></span><b><sup>EMJV</sup>, </b>\
 			<span class='heresearch'><b>コイツ</b></span><b><sup>LMJV</sup>\
@@ -198,7 +198,7 @@ var rootdata =  [
 			<b>k[o]-a-re-n-ka-si </b><span class='heresearch'><b>カレガシ</b></span><b><sup>LMJ</sup></b>, \
 			<span class='heresearch'><b>カガシ</b></span><b><sup>LMJV</sup>\
 			 pron 彼某</b><br>\
-			　　那个谁。<br>\
+			　　那个谁。<br>　　-ka 疑问。<br>　　-si 名词后缀。<br>\
 			"
 		  },	
 		{

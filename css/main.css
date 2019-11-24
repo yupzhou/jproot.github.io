@@ -402,6 +402,10 @@ background-color: #fff;
 	.select.form-control, .select.select2-search input[type=text] {
 	    min-width: 30vw;
 	}
+	.select2-drop{
+		min-width: 30vw;
+		text-align: center;
+	}
 	.minst{
 		width:90vw;
 		background-color:#fff;
@@ -490,4 +494,7 @@ div.rootcontent{
 div.minst:hover{
 	border: 2px solid #1abc9c;
 	color:#1abc9c;
+}
+.select2-drop{
+	text-align: center;
 }
