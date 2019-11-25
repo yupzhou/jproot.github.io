@@ -464,19 +464,44 @@ function bindtotop2() {
 bindtotop2();
   
 //首頁更換圖片
-/*function randindexbg() {
-  var ind = Math.random()*4;
-  if (ind <= 1) {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+function randindexbg() {
+  var ind = Math.floor(Math.random()*8);
+  if(document.body.clientWidth>=1024){
+	  if (ind <= 1) {
+    $('.box').css('background-image','url("./src/1.jpg")');
   }else if (ind <= 2)  {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("./src/2.jpg")');
   }else if (ind <= 3)  {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("./src/3.jpg")');
   }else if (ind <= 4)  {
-    $('.box').css('background-image','url("../src/fuji.jpg")');
+    $('.box').css('background-image','url("./src/4.jpg")');
+  }else if (ind <= 5)  {
+    $('.box').css('background-image','url("./src/5.jpg")');
+  }else if (ind <= 6)  {
+    $('.box').css('background-image','url("./src/6.jpg")');
+  }else if (ind <= 7){
+    $('.box').css('background-image','url("./src/7.jpg")');
+  }}else{
+	if (ind <= 1) {
+	  $('.box').css('background-image','url("./src/1.png")');
+	}else if (ind <= 2)  {
+	  $('.box').css('background-image','url("./src/2.png")');
+	}else if (ind <= 3)  {
+	  $('.box').css('background-image','url("./src/3.png")');
+	}else if (ind <= 4)  {
+	  $('.box').css('background-image','url("./src/4.png")');
+	}else if (ind <= 5)  {
+	  $('.box').css('background-image','url("./src/5.png")');
+	}else if (ind <= 6)  {
+	  $('.box').css('background-image','url("./src/6.png")');
+	}else if (ind <= 7){
+	  $('.box').css('background-image','url("./src/7.png")');
+	}  
   }
+  
 }
-randindexbg();*/
+randindexbg();
+
 // 注册右方搜索
 $('#searchbtn2').click(function() {
   if (searchlock) {

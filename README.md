@@ -33,7 +33,14 @@ feat. EdgeLight
 
 ## 引用
 - fghrsh Live2D 看板娘插件 https://github.com/fghrsh
-- Mount Fuji Image by WP Chun from Pixabay https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3571759
+- 封面来源：Pixabay https://pixabay.com 
+* 1 Mount Fuji by WP Chun
+* 2 Castle by StockSnap
+* 3 Sakura by Kanenori
+* 4 Sakura by Dimhou
+* 5 Sakura by auntmasako
+* 6 Landscape by prometeus_86
+* 7 Paifang by DeltaWorks
 
 ## 更新履历
 - [2018-05-20] 计划中
@@ -54,3 +61,4 @@ feat. EdgeLight
 - [2019-11-17] 站长统计
 - [2019-11-21] 2.2版本，修改css、增加轻量版
 - [2019-11-22] 2.3版本，修改css、增加轻量版入口
+- [2019-11-25] 2.4版本，增加返回顶部按钮、背景轮换

@@ -43,7 +43,7 @@ z-index:2;
   left: 15vw;
   top: 10vh;
   /*background-color: #e2e2e2;*/
-  background-image: url('../src/fuji.jpg');
+  background-image: url('../src/1.jpg');
   background-size: 100% ;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -352,7 +352,7 @@ background-color: #fff;
 		font-size:35px;
 	}
 	.box{
-		background-image: url('../src/girl.png');
+		background-image: url('./src/1.png');
 	}
 	.ttb{
 		font-size: 15px;
@@ -501,10 +501,10 @@ div.minst:hover{
 
 .btn-circle, .btn-circle:focus{
 	 position: fixed;
-	 bottom: 15px;
-	 right: 15px;
-	 width: 40px;
-	 height: 40px;
+	 bottom: 20px;
+	 right: 20px;
+	 width: 45px;
+	 height: 45px;
 	 overflow-y: hidden;
 	 z-index: 12000;
 	 background-color:#F869A6;
@@ -514,7 +514,7 @@ div.minst:hover{
 	 justify-content: center;
 	 box-shadow: 0.1em 0.1em 0.3em #34495E;
 	font-weight: bold;
-	font-size:13px;
+	font-size:20px;
 }
 .btn-circle:hover, .btn-circle:active{
 	background-color:#1abc9c !important;
@@ -527,4 +527,6 @@ div.minst:hover{
 	right: 15px;
 }
 
-	
+#dicsearch{
+	width:150px;
+}
