@@ -445,6 +445,7 @@ function bindtotop() {
   $('.waifu').click(function() {
     $(".articlebox").animate({scrollTop:0},350);
     $(".otherbox").animate({scrollTop:0},350);
+    $(".diabox").animate({scrollTop:0},350);
     $(".helpbox").animate({scrollTop:0},350);
   }
 )
@@ -457,6 +458,7 @@ function bindtotop2() {
   $('.backtotop').click(function() {
     $(".articlebox").animate({scrollTop:0},350);
     $(".otherbox").animate({scrollTop:0},350);
+    $(".diabox").animate({scrollTop:0},350);
     $(".helpbox").animate({scrollTop:0},350);
   }
 )
