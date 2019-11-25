@@ -498,3 +498,33 @@ div.minst:hover{
 .select2-drop{
 	text-align: center;
 }
+
+.btn-circle, .btn-circle:focus{
+	 position: fixed;
+	 bottom: 15px;
+	 right: 15px;
+	 width: 40px;
+	 height: 40px;
+	 overflow-y: hidden;
+	 z-index: 12000;
+	 background-color:#F869A6;
+	 border-radius: 50%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 box-shadow: 0.1em 0.1em 0.3em #34495E;
+	font-weight: bold;
+	font-size:13px;
+}
+.btn-circle:hover, .btn-circle:active{
+	background-color:#1abc9c !important;
+	box-shadow: 0.1em 0.1em 0.3em #34495E;
+	font-weight: bold;
+}
+.closeall, .closeall:focus{
+	font-size:8px;
+	bottom: 65px;
+	right: 15px;
+}
+
+	

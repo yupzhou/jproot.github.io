@@ -170,10 +170,6 @@ $('#indexbtn').click(function() {
     indexinsopen = true;
   }
 })
-//关闭搜索列表
-$('.articlebox').click(function() {
-    $('.searchlist').empty();
-})
 
 //注册前两页展开箭头
 function bindarrow() {
@@ -456,7 +452,17 @@ function bindtotop() {
 bindtotop();
 //到达顶部
 
-
+// 生成返回顶部2
+function bindtotop2() {
+  $('.backtotop').click(function() {
+    $(".articlebox").animate({scrollTop:0},350);
+    $(".otherbox").animate({scrollTop:0},350);
+    $(".helpbox").animate({scrollTop:0},350);
+  }
+)
+}
+bindtotop2();
+  
 //首頁更換圖片
 /*function randindexbg() {
   var ind = Math.random()*4;
@@ -591,3 +597,9 @@ function hiraToKata(str) {
         return String.fromCharCode(chr);
     });
 }
+
+//关闭搜索列表
+$('.articlebox').click(function() {
+    $('.searchlist').empty();
+})
+
