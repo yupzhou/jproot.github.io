@@ -282,6 +282,10 @@ z-index:2;
     color: #fff;
     background-color:#F869A6;/*#1abc9c*/
 }
+.select2-choice{
+	padding: 10px 15px 10px 15px;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #F869A6;
@@ -338,9 +342,67 @@ background-color: #fff;
 		width: 100vw;
 		left:0px;
 	}
-	.indexbox, .waifu{
+	.waifu{
 		visibility: hidden;
 	}
+	.dicindex{
+	  width:25vw;
+	  margin:85px 0 0 69.8vw ;
+	  left:0;
+position:relative;
+top: 17px; 
+right:10px;
+  height: 80px;
+padding: 10px;
+  box-shadow: 2px 2px 3px #aaaaaa;
+  overflow-y: hidden;
+    background-color: rgba(240,240,240);
+  transition:height 0.3s;
+  -moz-transition:height 0.3s; /* Firefox 4 */
+  -webkit-transition:height 0.3s; /* Safari and Chrome */
+  -o-transition:height 0.3s; /* Opera */
+z-index:100;
+}
+.dicindex-close{
+ height: 40px;
+  transition:height 0.3s;
+  -moz-transition:height 0.3s; /* Firefox 4 */
+  -webkit-transition:height 0.3s; /* Safari and Chrome */
+  -o-transition:height 0.3s; /* Opera */
+
+}
+.indexbox{
+  overflow-y: scroll;
+  height: 70px;
+margin:0;
+}
+.indexlink{
+  color: #717171;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  cursor: pointer;
+	  text-align: center;
+  /* -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none; */
+}
+#indexbtn{
+  position: absolute;
+  width: 19vw;
+font-size:13px;
+padding:3px;
+left:3vw;right:3vw;
+}
+.indexlink-active{
+  font-size:13px;
+  color:#1ABC9C;
+}
+.tile-title{
+height:0;
+visibility:hidden;
+}
 	h4.headtitle, div.roottitle, span.rootsummary{
 		font-size:18px;
 	}
@@ -427,14 +489,27 @@ background-color: #fff;
 		justify-content: center;
 	}
 	.listsearchbox{
-	  width:90vw;
+	  width:63vw;
 	  height: 10vh;
 	  position: fixed;
 	  right: 0vw;
 	  overflow-y: visible;
 	  z-index:100;
-	  margin:0 auto;
+	  margin:0 0 0 5vw ;
 	  left:0;
+	}
+	.banner{
+	  position: fixed;
+	  top: 97px; 
+	  left: 20vw;
+	  right:10px;
+	  width:100vw;
+	  height: 50px;
+	  right: 0vw;
+	  z-index:-100;
+	  margin:0;
+	  left:0;
+	  background-color: #F869A6;
 	}
 	img.index{
 		float:center; width:50px;
@@ -470,12 +545,13 @@ background-color: #fff;
 		float:center; width:45px;
 		
 	}
-	.btn{
+	.btn-wide{
 		height:35px;
 		padding: 0 20px 0 20px;
 		margin: 0;
 		text-align: center;
 		font-size:15px;
+		min-width:0;
 	}
 	.select2-choice{
 		height:35px;
@@ -541,6 +617,7 @@ div.minst:hover{
 	 box-shadow: 0.1em 0.1em 0.3em #34495E;
 	font-weight: bold;
 	font-size:20px;
+	padding: 0;
 }
 .btn-circle:hover, .btn-circle:active{
 	background-color:#1abc9c !important;

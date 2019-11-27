@@ -155,21 +155,24 @@ function updateindex(nodenum) {
   var jumpheight = $("[data-node = "+ nodestr +"]").offset().top-$("[data-node='node1']").offset().top;
   $('.indexbox').scrollTop(jumpheight);
 }
-var indexinsopen = true;   //目录是否展开
+
+
+var indexinsopen = false;   //目录是否展开
 // 目录收起展开
 $('#indexbtn').click(function() {
   if (indexinsopen) {
     $('.indexbox').css("visibility","hidden");
-    $(this).html('展开');
+    $(this).html('目录　开');
     $('.dicindex').addClass('dicindex-close');
     indexinsopen = false;
   }else {
     $('.indexbox').css("visibility","visible");
-    $(this).html('收起');
+    $(this).html('目录　关');
     $('.dicindex').removeClass('dicindex-close');
     indexinsopen = true;
   }
 })
+
 
 //注册前两页展开箭头
 function bindarrow() {
