@@ -155,8 +155,6 @@ function updateindex(nodenum) {
   var jumpheight = $("[data-node = "+ nodestr +"]").offset().top-$("[data-node='node1']").offset().top;
   $('.indexbox').scrollTop(jumpheight);
 }
-
-
 var indexinsopen = false;   //目录是否展开
 // 目录收起展开
 $('#indexbtn').click(function() {
@@ -172,7 +170,6 @@ $('#indexbtn').click(function() {
     indexinsopen = true;
   }
 })
-
 
 //注册前两页展开箭头
 function bindarrow() {
@@ -257,7 +254,7 @@ content正文*/
    1.将当前headclass用</div>封装，add到articlebox
    2.新写入
      <div class="headclass" id="node10">
-         <h4 class="headtitle">• コ 類</h4>
+         <h4 class="headtitle">• コ 類</h4>
          <div class="headline"></div>
       到处理字符串，空出一个</div>结尾
     3.更新nowclass
@@ -295,7 +292,7 @@ function writedata(dicdata) {
     }else{   //若nowclass与当前class不相同
        nodestr = nodestr + '</div>';
        $('.articlebox').append(nodestr);
-       nodestr = '<div class="headclass" id="node' + nowdata.class + '"><h4 class="headtitle">▶ ' + classwords[nowdata.class-1] + ' </h4><div class="headline"></div>';
+       nodestr = '<div class="headclass" id="node' + nowdata.class + '"><h4 class="headtitle">▶ ' + classwords[nowdata.class-1] + ' </h4><div class="headline"></div>';
        nodestr = nodestr + '<div class="rootbox" data-ser=" ' + i + ' "><div class="roottitle">' + nowdata.title  + '<span class="rootsummary">' + nowdata.summary + '</span><span class="arrow"></span></div><div class="rootcontent" style="display:none;">' + nowdata.content + '</div></div>';
        nowclass = nowdata.class;
     }
@@ -632,6 +629,3 @@ function hiraToKata(str) {
 $('.articlebox').click(function() {
     $('.searchlist').empty();
 })
-
-
- 

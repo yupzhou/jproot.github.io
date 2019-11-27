@@ -239,7 +239,7 @@ z-index:2;
 
 .searchlist{
   overflow-y: auto;
-  height: 9vh;
+  height: 8vh;
   margin-top: 5px;
 }
 .listlink{
@@ -352,7 +352,7 @@ background-color: #fff;
 position:relative;
 top: 17px; 
 right:10px;
-  height: 80px;
+  height: 100px;
 padding: 10px;
   box-shadow: 2px 2px 3px #aaaaaa;
   overflow-y: hidden;
@@ -489,7 +489,7 @@ visibility:hidden;
 		justify-content: center;
 	}
 	.listsearchbox{
-	  width:63vw;
+	  width:62vw;
 	  height: 10vh;
 	  position: fixed;
 	  right: 0vw;
@@ -639,5 +639,4 @@ h2.index-title{
 	align-items: center;
 	justify-content: center;
 }
-
 
