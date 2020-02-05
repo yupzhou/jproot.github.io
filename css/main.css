@@ -542,11 +542,10 @@ visibility:hidden;
 		justify-content: center;
 	}
 	h2.index-title{
-		font-size:30px;
+		font-size:25px;
 	}
 	img.index{
-		float:center; width:45px;
-		
+		float:center; width:35px;
 	}
 	.btn-wide{
 		height:35px;
