@@ -132,11 +132,11 @@ $('.indexlink').click(function() {
 $('.articlebox').scroll(function() {
   var scrolltop = [0];
   // 赋值
-  for (var i = 1; i < 48 ; i++) {//總數+1
+  for (var i = 1; i < 49 ; i++) {//總數+1  加上解读49
     scrolltop[i] = $("#node" + i).offset().top;
   }
   // 循环检查
-  for (var j = 47; j > 0; j--) {//總數
+  for (var j = 48; j > 0; j--) {//總數
     if (scrolltop[j] <= 192) {
       // console.log('node' + j);
       // console.log('$(".articlebox").scrollTop():' + $('.articlebox').scrollTop());
@@ -262,7 +262,7 @@ content正文*/
 */
 //分类标题数组
 var classwords = [
-                  'ア　a','イ　i','ウ　u','エ　e','オ　o',
+                  '解读','ア　a','イ　i','ウ　u','エ　e','オ　o',
                   'カ　ka','キ　ki','ク　ku','ケ　ke','コ　ko',
                   'サ　sa','シ　si','ス　su','セ　se','ソ　so',
                   'タ　ta','チ　ti','ツ　tu','テ　te','ト　to',
@@ -280,7 +280,7 @@ function writedata(dicdata) {
   var nowdatanum = 0; //当前数据序号
   var nodestr = ""   //处理用字符串
   //为第一组数据写入nodestr(注意使用单引号)
-  nodestr = '<div class="headclass" id="node1"><h4 class="headtitle">▶ ア　a</h4><div class="headline"></div>';
+  nodestr = '<div class="headclass" id="node1"><h4 class="headtitle">▶ 解读</h4><div class="headline"></div>';
   for (var i = 0; i <= dicdata.length; i++) {
     // console.log(dicdata[i]);
     var nowdata = dicdata[i];
@@ -591,6 +591,51 @@ function listsearch(dicdata) {
     })
     searchlock = false;
   }else{                            //按音讀搜索
+    for (var i = 5; i < dicdata.length-1; i++) {
+      // 分离数据
+      var word_normal = dicdata[i].content.split(" [常用汉字表内音读] </b>")[1];
+      if (word_normal != undefined) {
+        word_normal = word_normal.split("<br>")[0];
+      }else {
+        word_normal = '';
+      }
+      var word_insheet = dicdata[i].content.split(" [常用汉字表外音读] </b>")[1];
+      if (word_insheet != undefined) {
+        word_insheet = word_insheet.split("<br>")[0];
+      }else {
+        word_insheet = '';
+      }
+      var word_offsheet = dicdata[i].content.split(" [表外汉字] </b>")[1];
+      if (word_offsheet == undefined) {
+        word_offsheet = '';
+      }
+      // console.log('word_normal:' + word_normal);
+      // console.log('word_insheet:' + word_insheet);
+      // console.log('word_offsheet:' + word_offsheet);
+      // console.log('');
+      // 搜索并添加到列表
+      // console.log(word_offsheet);
+      if (word_normal.match(searchword) || word_insheet.match(searchword) || word_offsheet.match(searchword)) {
+        var liststr = '<a class="listlink login-link" data-list="' + i + '">' + dicdata[i].title + '</a>';
+        $('.searchlist').append(liststr);
+      }
+    }
+    //注册列表点击跳转
+    $('.listlink').click(function() {
+      var jumpnode = parseInt($(this).attr('data-list'));
+      console.log($('.rootbox')[jumpnode]);
+      var jumpheight = $($('.rootbox')[jumpnode]).offset().top-$("#node1").offset().top;
+      $(".articlebox").animate({scrollTop:jumpheight},350)
+      setTimeout(function() {
+        if (!$($('.rootbox')[jumpnode]).children().children('.arrow').hasClass('arrow-open')) {
+          $($('.rootbox')[jumpnode]).children().children('.arrow').click()
+        }
+      },370)
+    })
+    searchlock = false;
+  }
+  
+  /*else{                            //按音讀搜索
     var searchwordarr = $('.heresearch');
     for (var i = 0; i < searchwordarr.length; i++) {
       var search_str = searchwordarr[i].innerHTML;
@@ -614,7 +659,7 @@ function listsearch(dicdata) {
       },370)
     })
     searchlock = false;
-  }
+  } */
 }
 
 // 平假转片假
