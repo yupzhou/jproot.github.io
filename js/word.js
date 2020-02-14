@@ -39,13 +39,13 @@ var worddata=[
 "title":"《广韵》音韵学",
 "class":"1",
 "summary":"声母",
-"content":"<b>中古三十六字母表</b><br><iframe src='./src/zimu.htm' width='100%' height='360px' frameborder='0'></iframe>　　其中，喻三 = 云，喻四 = 以，在重纽的分布上有区别。</br>　　正齿音也可统一表示为：照穿牀審禪。</br>　　轻唇化条件：唇音三等韵（明+尤、東除外） > 非・敷・奉・微。</br><b>声母与等的关系</b><br><iframe src='./src/zimudiv.htm' width='100%' height='475px' frameborder='0'></iframe>※方便比较，数量稀少的当作没有，俟母除外。英文代号在后面的部分会用到。</br><b>等呼的确立</b><br>　　本节简述2014 William H. Baxter and Laurent Sagart The Baxter-Sagart reconstruction of Old Chinese的其中一小部分内容。</br>　　咽化假说：咽化→非三等；无咽化→三等。</br>　　r假说：非三等有r→二等；三等有r→三等、重纽三等。</br>　　圆元音假说：圆元音分裂为双元音→开合后起。唇音不分开合。</br>　　前元音假说：前元音及尖尾音（*-j, *-t, *-n, *-r）前的ə→四等；其他情形→一等；→六元音说：*i, *ə, *u, *e, *a, *o。</br>"
+"content":"<b>中古三十六字母表</b><br><iframe src='./src/zimu.htm' width='100%' height='365px' frameborder='0'></iframe>　　其中，喻三 = 云，喻四 = 以，在重纽的分布上有区别。</br>　　正齿音也可统一表示为：照穿牀審禪。</br>　　轻唇化条件：唇音三等韵（明+尤、東除外） > 非・敷・奉・微。</br><b>声母与等的关系</b><br><iframe src='./src/zimudiv.htm' width='100%' height='495px' frameborder='0'></iframe>※方便比较，数量稀少的当作没有，俟母除外。英文代号在后面的部分会用到。</br><b>等呼的确立</b><br>　　本节简述2014 William H. Baxter and Laurent Sagart The Baxter-Sagart reconstruction of Old Chinese的其中一小部分内容。</br>　　咽化假说：咽化→非三等；无咽化→三等。</br>　　r假说：非三等有r→二等；三等有r→三等、重纽三等。</br>　　圆元音假说：圆元音分裂为双元音→开合后起。唇音不分开合。</br>　　前元音假说：前元音及尖尾音（*-j, *-t, *-n, *-r）前的ə→四等；其他情形→一等；→六元音说：*i, *ə, *u, *e, *a, *o。</br>"
 },
 {
 "title":"《广韵》音韵学",
 "class":"1",
 "summary":"韵母",
-"content":"<b>《广韵》韵目表</b><br><iframe src='./src/yunmu.htm' width='100%' height='300px' frameborder='0'></iframe><b>内外转与韵摄排列</b><br>　　韵摄排列：通江 止遇蟹 臻山 效果假 宕梗曾 流 深咸。<iframe src='./src/zhuan.htm' width='100%' height='125px' frameborder='0'></iframe>　　对照发现：韵摄的排列依照阳声韵-阴声韵-阳声韵-阴声韵……排列，内部再依照无二等韵摄-有二等韵摄-无二等韵摄-有二等韵摄……排列。<iframe src='./src/yun.htm' width='100%' height='255px' frameborder='0'></iframe>"
+"content":"<b>《广韵》韵目表</b><br><iframe src='./src/yunmu.htm' width='100%' height='300px' frameborder='0'></iframe><b>内外转与韵摄排列</b><br>　　韵摄排列：通江 止遇蟹 臻山 效果假 宕梗曾 流 深咸。<iframe src='./src/zhuan.htm' width='100%' height='125px' frameborder='0'></iframe>　　对照发现：韵摄的排列依照阳声韵-阴声韵-阳声韵-阴声韵……排列，内部再依照无二等韵摄-有二等韵摄-无二等韵摄-有二等韵摄……排列。<iframe src='./src/yun.htm' width='100%' height='260px' frameborder='0'></iframe>"
 },
 {
 "title":"《广韵》音韵学",
@@ -59,10 +59,6 @@ var worddata=[
 "summary":"附录: 发生在汉字音上的历史假名遣到现代假名遣的变化",
 "content":"1)　ハ行转呼：pV > hV, -pV > -V<br>2)　双元音：au > ou, eu > jou, iu > juu<br>3)　拨音：nV/mV > N（但表中一律记为n）<br>4)　颚化：Ti > Chi, Tu > Tsu，（但表中为了统一，表记上不写成ch/zh和ts/dz，di/du写成zi/zu以与s/z统一）<br>5)　w音衰退：wV(包括-wa，但wa-除外) > V<br>6)　合拗音衰退：KwV > KV<br>7)　四个假名：di, zi合流（包括djV, zjV）；du, zu合流"
 },
-
-
-
-
 
 {
 "title":"《广韵》音读字表",
