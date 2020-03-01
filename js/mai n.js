@@ -114,8 +114,6 @@ $(".searchmethod").click(function() {
 })
 //----------------------------------------------------------------------------------//
 var indexposition = 'node1';   //目录高亮位置
-
-
 // 目录点击跳转
 $('.indexlink').click(function() {
   if ($(this).hasClass('indexlink-active')) {
@@ -134,11 +132,11 @@ $('.indexlink').click(function() {
 $('.articlebox').scroll(function() {
   var scrolltop = [0];
   // 赋值
-  for (var i = 1; i < 49 ; i++) {//總數+1
+  for (var i = 1; i < 48 ; i++) {//總數+1  加上解读49
     scrolltop[i] = $("#node" + i).offset().top;
   }
   // 循环检查
-  for (var j = 48; j > 0; j--) {//總數
+  for (var j = 47; j > 0; j--) {//總數
     if (scrolltop[j] <= 192) {
       // console.log('node' + j);
       // console.log('$(".articlebox").scrollTop():' + $('.articlebox').scrollTop());
@@ -172,7 +170,6 @@ $('#indexbtn').click(function() {
     indexinsopen = true;
   }
 })
-
 
 //注册前两页展开箭头
 function bindarrow() {
@@ -257,7 +254,7 @@ content正文*/
    1.将当前headclass用</div>封装，add到articlebox
    2.新写入
      <div class="headclass" id="node10">
-         <h4 class="headtitle">• コ 類</h4>
+         <h4 class="headtitle">• コ 類</h4>
          <div class="headline"></div>
       到处理字符串，空出一个</div>结尾
     3.更新nowclass
@@ -279,7 +276,7 @@ var classwords = [
 //写入字典数据到页面
 function writedata(dicdata) {
   $('.articlebox').empty();
-  var nowclass = 1;   //当前类别，默认从ア（class=1）开始读取
+  var nowclass = 1;   //当前类别，默认从ア類（class=1）开始读取
   var nowdatanum = 0; //当前数据序号
   var nodestr = ""   //处理用字符串
   //为第一组数据写入nodestr(注意使用单引号)
@@ -318,7 +315,6 @@ $('#saveBtn').click(function() {
   window.location.href = "./dict.html";
   
 })
-
 //注册首页回车
 $("#search-query-3").keydown(function (e) {
     if (e.keyCode == 13) {
@@ -361,7 +357,6 @@ $(".searchinput").keydown(function (e) {
       }
     }
 });
-
 // 搜索函数
 function searchup(dicdata) {
   searchlock = true;
@@ -427,11 +422,12 @@ if (jumpword !== null && jumpword != '') {
   if (search_mode == 'rootmode') {  //按词根搜索
     searchup(rootdata);
   }else if(search_mode == 'affixmode'){ //按词綴搜索
-  console.log('ss');
-  search_mode = "affixmode";
-  $('.searchmethod').removeClass('active');
-  $("[data-mod='affixmode']").addClass('active');
-  writedata(affixdata);
+	console.log('ss');
+	search_mode = "affixmode";
+	$('.searchmethod').removeClass('active');
+	$("[data-mod='affixmode']").addClass('active');
+	writedata(affixdata);
+	searchup(affixdata);
 	searchup(affixdata);
   }else{   //按单语搜索
     console.log('ss');
@@ -449,9 +445,8 @@ function bindtotop() {
   $('.waifu').click(function() {
     $(".articlebox").animate({scrollTop:0},350);
     $(".otherbox").animate({scrollTop:0},350);
-	$(".diabox").animate({scrollTop:0},350);
+    $(".diabox").animate({scrollTop:0},350);
     $(".helpbox").animate({scrollTop:0},350);
-	
   }
 )
 }
@@ -469,7 +464,7 @@ function bindtotop2() {
 )
 }
 bindtotop2();
-
+  
 //首頁更換圖片
 function randindexbg() {
   var ind = Math.floor(Math.random()*8);
@@ -508,6 +503,7 @@ function randindexbg() {
   
 }
 randindexbg();
+
 // 注册右方搜索
 $('#searchbtn2').click(function() {
   if (searchlock) {
@@ -666,26 +662,22 @@ function listsearch(dicdata) {
   } */
 }
 
-// 片假转平假
-/*function hiraToKata(str) {
+// 平假转片假(现为片假转平假)
+function hiraToKata(str) {
     return str.replace(/[\u30a1-\u30f6]/g, function(match) {
         var chr = match.charCodeAt(0)  -  0x60;
         return String.fromCharCode(chr);
     });
 }
-function hiraToKata(str) {// 平假转片假
-    return str.replace(/[\u3041-\u3096]/g, function(match) {
-        var chr = match.charCodeAt(0)  +  0x60;
-        return String.fromCharCode(chr);
-    });
-}*/
-
+/*
 function hiraToKata(str) {
     return str.replace(/[\u3041-\u3096]/g, function(match) {
         var chr = match.charCodeAt(0)  +  0x60;
         return String.fromCharCode(chr);
     });
 }
+*/
+
 
 //关闭搜索列表
 $('.articlebox').click(function() {

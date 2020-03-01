@@ -654,3 +654,7 @@ h2.index-title{
 	justify-content: center;
 }
 
+b{
+	font-weight: bold;
+	color: #dc4481;
+}
