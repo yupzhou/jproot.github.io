@@ -246,7 +246,7 @@ PKor *pìrɨ́- at first, begin > MKor. pìrɨ́s, pìrɨ́só > Mod. piroso<br>
 "content": " \
 <b>puta [二] ふた</b> num 二<br>\
 <b>pu [二] ふ，ふう</b> num 二<br>\
-<b>puta-əmə(-te) [両面・二面・双面] ふたおもて，ふたおも n 表里；舞的一种<br>\
+<b>puta-əmə(-te) [両面・二面・双面] ふたおもて，ふたおも</b> n 表里；舞的一种<br>\
 <b>put-uka [二日] ふつか</b> num 两天 n 农历初二<br>\
 <b>puta-sə-ti [二十・二十路] ふたそち, ふたそぢ, ふたそじ</b> num 二十年，二十岁<br>\
 <b>puta-taNpi [二度・再] ふたたび</b> num 两次<br>\
