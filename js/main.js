@@ -570,7 +570,7 @@ function listsearch(dicdata) {
       },370)
     })
     searchlock = false;
-  }else if(search_mode == 'affixmode'){
+  }else if(search_mode == 'affixmode'){ //按訓讀詞缀搜索
 	      var searchwordarr = $('.heresearch');
     for (var i = 0; i < searchwordarr.length; i++) {
       var search_str = searchwordarr[i].innerHTML;
@@ -620,7 +620,7 @@ function listsearch(dicdata) {
       // 搜索并添加到列表
       // console.log(word_offsheet);
       if (word_normal.match(searchword) || word_insheet.match(searchword) || word_offsheet.match(searchword)) {
-        var liststr = '<a class="listlink login-link" data-list="' + i + '">' + dicdata[i].title + '</a>';
+        var liststr = '<a class="listlink login-link" data-list="' + i + '">' + dicdata[i].title + '　' + dicdata[i].summary + '</a>';
         $('.searchlist').append(liststr);
       }
     }
